@@ -1,0 +1,11 @@
+{
+    "name": "wyrimaps/battlenet-client",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cees-Jan Kiewiet",
+            "email": "ceesjank@gmail.com"
+        }
+    ],
+    "require": {}
+}
