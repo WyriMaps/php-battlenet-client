@@ -1,0 +1,13 @@
+namespace: WyriMaps\BattleNet\Resource
+class: WorldOfWarcraft\Mount
+properties:
+  name: string
+  spellId: int
+  creatureId: int
+  itemId: int
+  qualityId: int
+  icon: string
+  isGround: bool
+  isFlying: bool
+  isAquatic: bool
+  isJumping: bool
