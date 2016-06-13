@@ -1,0 +1,13 @@
+namespace: WyriMaps\BattleNet\Resource
+class: WorldOfWarcraft\Pet
+properties:
+  canBattle: bool
+  creatureId: int
+  name: string
+  family: string
+  icon: string
+  qualityId: int
+  stats: array
+  strongAgainst: array
+  typeId: int
+  weakAgainst: array
