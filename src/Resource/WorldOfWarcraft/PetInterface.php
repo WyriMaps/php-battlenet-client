@@ -2,7 +2,7 @@
 
 namespace WyriMaps\BattleNet\Resource\WorldOfWarcraft;
 
-use WyriHaximus\ApiClient\Resource\ResourceInterface;
+use ApiClients\Foundation\Resource\ResourceInterface;
 
 interface PetInterface extends ResourceInterface
 {

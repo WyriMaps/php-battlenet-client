@@ -2,7 +2,7 @@
 
 namespace WyriMaps\BattleNet\Resource\WorldOfWarcraft;
 
-use WyriHaximus\ApiClient\Resource\TransportAwareTrait;
+use ApiClients\Foundation\Resource\TransportAwareTrait;
 
 abstract class Mount implements MountInterface
 {
