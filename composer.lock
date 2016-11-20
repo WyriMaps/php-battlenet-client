@@ -384,12 +384,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-api-clients/transport.git",
-                "reference": "596b10e9bab0d721563002220349f727ad2af02a"
+                "reference": "65939beb85c8969a40ae191dbdf08d4ee4d2d849"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-api-clients/transport/zipball/596b10e9bab0d721563002220349f727ad2af02a",
-                "reference": "596b10e9bab0d721563002220349f727ad2af02a",
+                "url": "https://api.github.com/repos/php-api-clients/transport/zipball/65939beb85c8969a40ae191dbdf08d4ee4d2d849",
+                "reference": "65939beb85c8969a40ae191dbdf08d4ee4d2d849",
                 "shasum": ""
             },
             "require": {
@@ -403,7 +403,9 @@
                 "container-interop/container-interop": "^1.1",
                 "daverandom/exceptional-json": "^1.0.1",
                 "doctrine/annotations": "^1.2",
+                "joshdifabio/composed": "^1.0",
                 "league/event": "^2.1",
+                "ocramius/package-versions": "^1.1",
                 "php": "^7.0",
                 "react/cache": "^0.4.1",
                 "react/promise": "^2.4",
@@ -447,7 +449,7 @@
                     "email": "ceesjank@gmail.com"
                 }
             ],
-            "time": "2016-11-16 20:52:19"
+            "time": "2016-11-20 01:35:26"
         },
         {
             "name": "clue/block-react",
@@ -1482,6 +1484,53 @@
                 "serializer"
             ],
             "time": "2016-01-12 11:39:06"
+        },
+        {
+            "name": "ocramius/package-versions",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Ocramius/PackageVersions.git",
+                "reference": "4b2bfc8128db95b533303942b0d5b332bffa07c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Ocramius/PackageVersions/zipball/4b2bfc8128db95b533303942b0d5b332bffa07c6",
+                "reference": "4b2bfc8128db95b533303942b0d5b332bffa07c6",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "php": "~7.0"
+            },
+            "require-dev": {
+                "composer/composer": "^1.2.0",
+                "phpunit/phpunit": "^5.4.7"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "PackageVersions\\Installer",
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PackageVersions\\": "src/PackageVersions"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com"
+                }
+            ],
+            "description": "Composer plugin that provides efficient querying for installed package versions (no runtime IO)",
+            "time": "2016-07-25 07:13:56"
         },
         {
             "name": "padraic/humbug_get_contents",
@@ -4368,18 +4417,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-api-clients/resource-test-utilities.git",
-                "reference": "326daca2d57256f2bf3a16441a9ad8785c619249"
+                "reference": "878d0b6a7e545f910307de492cd2315c91151130"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-api-clients/resource-test-utilities/zipball/326daca2d57256f2bf3a16441a9ad8785c619249",
-                "reference": "326daca2d57256f2bf3a16441a9ad8785c619249",
+                "url": "https://api.github.com/repos/php-api-clients/resource-test-utilities/zipball/878d0b6a7e545f910307de492cd2315c91151130",
+                "reference": "878d0b6a7e545f910307de492cd2315c91151130",
                 "shasum": ""
             },
             "require": {
                 "api-clients/foundation": "dev-master",
                 "api-clients/hydrator": "dev-master",
                 "api-clients/resource": "dev-master",
+                "api-clients/test-utilities": "dev-master",
                 "doctrine/annotations": "^1.2",
                 "doctrine/inflector": "^1.1",
                 "php": "^7.0",
@@ -4409,7 +4459,7 @@
                     "email": "ceesjank@gmail.com"
                 }
             ],
-            "time": "2016-10-02 19:40:27"
+            "time": "2016-11-20 12:18:37"
         },
         {
             "name": "doctrine/inflector",
