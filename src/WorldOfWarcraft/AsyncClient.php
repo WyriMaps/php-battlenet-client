@@ -50,7 +50,7 @@ class AsyncClient
     public function realms(): ObservableInterface
     {
         return Promise::toObservable(
-            $this->client->handle(new SimpleRequestCommand('wow/realm/status/'))
+            $this->client->handle(new SimpleRequestCommand('wow/realm/status'))
         )->flatMap(function (ResponseInterface $response) {
             return Observable::fromArray($response->getBody()->getJson()['realms']);
         })->flatMap(function ($realm) {
