@@ -31,9 +31,9 @@ class AsyncClient
         return Promise::toObservable(
             $this->client->handle(new SimpleRequestCommand('wow/mount/'))
         )->flatMap(function (ResponseInterface $response) {
-            return Observable::fromArray($response->getBody()->getJSON()['mounts']);
-        })->map(function ($mount) {
-            return $this->client->handle(new HydrateCommand('WorldOfWarcraft\Mount', $mount));
+            return Observable::fromArray($response->getBody()->getJson()['mounts']);
+        })->flatMap(function ($mount) {
+            return Promise::toObservable($this->client->handle(new HydrateCommand('WorldOfWarcraft\Mount', $mount)));
         });
     }
 }
