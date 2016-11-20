@@ -3,11 +3,8 @@ properties:
   type: string
   population: string
   queue: bool
-  wintergrasp: array
-  tolBarad: array
   status: bool
   name: string
-  url: string
   battlegroup: string
   locale: string
   timezone: string
