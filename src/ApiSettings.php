@@ -6,6 +6,7 @@ use ApiClients\Foundation\Hydrator\Options as HydratorOptions;
 use ApiClients\Foundation\Options as FoundationOptions;
 use ApiClients\Foundation\Transport\Middleware\JsonDecodeMiddleware;
 use ApiClients\Foundation\Transport\Options as TransportOptions;
+use ApiClients\Foundation\Transport\UserAgentStrategies;
 use WyriMaps\BattleNet\Middleware\ApiKeyMiddleware;
 
 final class ApiSettings
@@ -19,6 +20,8 @@ final class ApiSettings
         ],
         FoundationOptions::TRANSPORT_OPTIONS => [
             TransportOptions::HOST => Region::DEFAULT,
+            TransportOptions::USER_AGENT_STRATEGY => UserAgentStrategies::PACKAGE_VERSION,
+            TransportOptions::PACKAGE => 'wyrimaps/battlenet-client',
         ],
     ];
 

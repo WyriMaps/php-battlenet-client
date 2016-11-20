@@ -43,6 +43,22 @@ class AsyncClient
     }
 
     /**
+     * List all realms
+     *
+     * @return ObservableInterface
+     */
+    public function realms(): ObservableInterface
+    {
+        return Promise::toObservable(
+            $this->client->handle(new SimpleRequestCommand('wow/realm/status'))
+        )->flatMap(function (ResponseInterface $response) {
+            return Observable::fromArray($response->getBody()->getJson()['realms']);
+        })->flatMap(function ($realm) {
+            return Promise::toObservable($this->client->handle(new HydrateCommand('WorldOfWarcraft\Realm', $realm)));
+        });
+    }
+
+    /**
      * List all pets
      *
      * @return ObservableInterface
