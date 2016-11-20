@@ -8,7 +8,7 @@ use WyriMaps\BattleNet\Resource\WorldOfWarcraft\PetInterface;
 require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'vendor/autoload.php';
 
 $loop = Factory::create();
-$client = new AsyncClient($loop);
+$client = new AsyncClient(require 'resolve_apikey.php', $loop);
 
 $client->worldOfWarcraft()->pets()->subscribe(new CallbackObserver(function (PetInterface $pet) {
     echo $pet->name(), PHP_EOL;
