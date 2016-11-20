@@ -26,6 +26,11 @@ class AsyncClient
         $this->client = $client;
     }
 
+    /**
+     * List all mounts
+     *
+     * @return ObservableInterface
+     */
     public function mounts(): ObservableInterface
     {
         return Promise::toObservable(
