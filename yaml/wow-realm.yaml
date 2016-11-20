@@ -1,0 +1,14 @@
+class: WorldOfWarcraft\Realm
+properties:
+  type: string
+  population: string
+  queue: bool
+  wintergrasp: array
+  tolBarad: array
+  status: bool
+  name: string
+  url: string
+  battlegroup: string
+  locale: string
+  timezone: string
+  connected_realms: array
