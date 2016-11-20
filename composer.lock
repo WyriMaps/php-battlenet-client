@@ -343,12 +343,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-api-clients/test-utilities.git",
-                "reference": "0890f53574fa987177e33557680e701f444eaa55"
+                "reference": "dc2d7a447eb02be1e8e4847265391b19f2076af2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-api-clients/test-utilities/zipball/0890f53574fa987177e33557680e701f444eaa55",
-                "reference": "0890f53574fa987177e33557680e701f444eaa55",
+                "url": "https://api.github.com/repos/php-api-clients/test-utilities/zipball/dc2d7a447eb02be1e8e4847265391b19f2076af2",
+                "reference": "dc2d7a447eb02be1e8e4847265391b19f2076af2",
                 "shasum": ""
             },
             "require": {
@@ -376,7 +376,7 @@
                     "email": "ceesjank@gmail.com"
                 }
             ],
-            "time": "2016-11-05 22:45:05"
+            "time": "2016-11-20 15:12:15"
         },
         {
             "name": "api-clients/transport",
@@ -4417,12 +4417,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-api-clients/resource-test-utilities.git",
-                "reference": "878d0b6a7e545f910307de492cd2315c91151130"
+                "reference": "bf5c8f58fba80e6d35678bccd9c8b526fe7c1a03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-api-clients/resource-test-utilities/zipball/878d0b6a7e545f910307de492cd2315c91151130",
-                "reference": "878d0b6a7e545f910307de492cd2315c91151130",
+                "url": "https://api.github.com/repos/php-api-clients/resource-test-utilities/zipball/bf5c8f58fba80e6d35678bccd9c8b526fe7c1a03",
+                "reference": "bf5c8f58fba80e6d35678bccd9c8b526fe7c1a03",
                 "shasum": ""
             },
             "require": {
@@ -4459,7 +4459,7 @@
                     "email": "ceesjank@gmail.com"
                 }
             ],
-            "time": "2016-11-20 12:18:37"
+            "time": "2016-11-20 14:55:10"
         },
         {
             "name": "doctrine/inflector",
