@@ -27,6 +27,22 @@ class AsyncClient
     }
 
     /**
+     * List all mounts
+     *
+     * @return ObservableInterface
+     */
+    public function mounts(): ObservableInterface
+    {
+        return Promise::toObservable(
+            $this->client->handle(new SimpleRequestCommand('wow/mount/'))
+        )->flatMap(function (ResponseInterface $response) {
+            return Observable::fromArray($response->getBody()->getJson()['mounts']);
+        })->flatMap(function ($mount) {
+            return Promise::toObservable($this->client->handle(new HydrateCommand('WorldOfWarcraft\Mount', $mount)));
+        });
+    }
+
+    /**
      * List all pets
      *
      * @return ObservableInterface

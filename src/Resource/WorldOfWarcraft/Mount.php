@@ -1,13 +1,15 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace WyriMaps\BattleNet\Resource\WorldOfWarcraft;
 
-use ApiClients\Foundation\Resource\TransportAwareTrait;
+use ApiClients\Foundation\Hydrator\Annotations\EmptyResource;
+use ApiClients\Foundation\Resource\AbstractResource;
 
-abstract class Mount implements MountInterface
+/**
+ * @EmptyResource("WorldOfWarcraft\EmptyMount")
+ */
+abstract class Mount extends AbstractResource implements MountInterface
 {
-    use TransportAwareTrait;
-
     /**
      * @var string
      */
@@ -47,6 +49,7 @@ abstract class Mount implements MountInterface
      * @var bool
      */
     protected $isFlying;
+
     /**
      * @var bool
      */
@@ -56,14 +59,6 @@ abstract class Mount implements MountInterface
      * @var bool
      */
     protected $isJumping;
-
-    /**
-     * @return int
-     */
-    public function id() : int
-    {
-        return $this->spellId;
-    }
 
     /**
      * @return string
