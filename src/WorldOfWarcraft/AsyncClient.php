@@ -57,4 +57,20 @@ class AsyncClient
             return Promise::toObservable($this->client->handle(new HydrateCommand('WorldOfWarcraft\Pet', $pet)));
         });
     }
+
+    /**
+     * List all zones
+     *
+     * @return ObservableInterface
+     */
+    public function zones(): ObservableInterface
+    {
+        return Promise::toObservable(
+            $this->client->handle(new SimpleRequestCommand('wow/zone/'))
+        )->flatMap(function (ResponseInterface $response) {
+            return Observable::fromArray($response->getBody()->getJson()['zones']);
+        })->flatMap(function ($zone) {
+            return Promise::toObservable($this->client->handle(new HydrateCommand('WorldOfWarcraft\Zone', $zone)));
+        });
+    }
 }
