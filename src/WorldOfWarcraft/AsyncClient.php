@@ -57,4 +57,20 @@ class AsyncClient
             return Promise::toObservable($this->client->handle(new HydrateCommand('WorldOfWarcraft\Realm', $realm)));
         });
     }
+
+    /**
+     * List all pets
+     *
+     * @return ObservableInterface
+     */
+    public function pets(): ObservableInterface
+    {
+        return Promise::toObservable(
+            $this->client->handle(new SimpleRequestCommand('wow/pet/'))
+        )->flatMap(function (ResponseInterface $response) {
+            return Observable::fromArray($response->getBody()->getJson()['pets']);
+        })->flatMap(function ($pet) {
+            return Promise::toObservable($this->client->handle(new HydrateCommand('WorldOfWarcraft\Pet', $pet)));
+        });
+    }
 }
