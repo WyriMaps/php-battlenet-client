@@ -6,6 +6,8 @@ use ApiClients\Foundation\Resource\ResourceInterface;
 
 interface PetInterface extends ResourceInterface
 {
+    const HYDRATE_CLASS = 'WorldOfWarcraft\\Pet';
+
     /**
      * @return bool
      */

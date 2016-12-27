@@ -6,6 +6,8 @@ use ApiClients\Foundation\Resource\ResourceInterface;
 
 interface MountInterface extends ResourceInterface
 {
+    const HYDRATE_CLASS = 'WorldOfWarcraft\\Mount';
+
     /**
      * @return string
      */
