@@ -11,6 +11,7 @@ use Rx\ObservableInterface;
 use Rx\React\Promise;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\MountsCommand;
 use function ApiClients\Tools\Rx\unwrapObservableFromPromise;
+use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\PetsCommand;
 
 class AsyncClient
 {
@@ -63,13 +64,9 @@ class AsyncClient
      */
     public function pets(): ObservableInterface
     {
-        return Promise::toObservable(
-            $this->client->handle(new SimpleRequestCommand('wow/pet/'))
-        )->flatMap(function (ResponseInterface $response) {
-            return Observable::fromArray($response->getBody()->getJson()['pets']);
-        })->flatMap(function ($pet) {
-            return Promise::toObservable($this->client->handle(new HydrateCommand('WorldOfWarcraft\Pet', $pet)));
-        });
+        return unwrapObservableFromPromise($this->client->handle(
+            new PetsCommand()
+        ));
     }
 
     /**
