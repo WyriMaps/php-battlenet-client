@@ -9,6 +9,8 @@ use Psr\Http\Message\ResponseInterface;
 use Rx\Observable;
 use Rx\ObservableInterface;
 use Rx\React\Promise;
+use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\MountsCommand;
+use function ApiClients\Tools\Rx\unwrapObservableFromPromise;
 
 class AsyncClient
 {
@@ -33,13 +35,9 @@ class AsyncClient
      */
     public function mounts(): ObservableInterface
     {
-        return Promise::toObservable(
-            $this->client->handle(new SimpleRequestCommand('wow/mount/'))
-        )->flatMap(function (ResponseInterface $response) {
-            return Observable::fromArray($response->getBody()->getJson()['mounts']);
-        })->flatMap(function ($mount) {
-            return Promise::toObservable($this->client->handle(new HydrateCommand('WorldOfWarcraft\Mount', $mount)));
-        });
+        return unwrapObservableFromPromise($this->client->handle(
+            new MountsCommand()
+        ));
     }
 
     /**
