@@ -13,6 +13,7 @@ use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\MountsCommand;
 use function ApiClients\Tools\Rx\unwrapObservableFromPromise;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\PetsCommand;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\RealmsCommand;
+use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\ZonesCommand;
 
 class AsyncClient
 {
@@ -73,12 +74,8 @@ class AsyncClient
      */
     public function zones(): ObservableInterface
     {
-        return Promise::toObservable(
-            $this->client->handle(new SimpleRequestCommand('wow/zone/'))
-        )->flatMap(function (ResponseInterface $response) {
-            return Observable::fromArray($response->getBody()->getJson()['zones']);
-        })->flatMap(function ($zone) {
-            return Promise::toObservable($this->client->handle(new HydrateCommand('WorldOfWarcraft\Zone', $zone)));
-        });
+        return unwrapObservableFromPromise($this->client->handle(
+            new ZonesCommand()
+        ));
     }
 }
