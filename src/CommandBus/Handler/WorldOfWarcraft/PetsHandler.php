@@ -8,6 +8,7 @@ use Rx\Observable;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\PetsCommand;
 use function React\Promise\resolve;
 use function WyriHaximus\React\futureFunctionPromise;
+use WyriMaps\BattleNet\Resource\WorldOfWarcraft\PetInterface;
 
 final class PetsHandler
 {
@@ -32,6 +33,6 @@ final class PetsHandler
      */
     public function handle(PetsCommand $command): PromiseInterface
     {
-        return $this->fetchAndIterateService->handle('wow/pet/', 'pets', 'WorldOfWarcraft\Pet');
+        return $this->fetchAndIterateService->handle('wow/pet/', 'pets', PetInterface::HYDRATE_CLASS);
     }
 }

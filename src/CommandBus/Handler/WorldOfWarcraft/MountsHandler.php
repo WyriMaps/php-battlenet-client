@@ -8,6 +8,7 @@ use Rx\Observable;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\MountsCommand;
 use function React\Promise\resolve;
 use function WyriHaximus\React\futureFunctionPromise;
+use WyriMaps\BattleNet\Resource\WorldOfWarcraft\MountInterface;
 
 final class MountsHandler
 {
@@ -32,6 +33,6 @@ final class MountsHandler
      */
     public function handle(MountsCommand $command): PromiseInterface
     {
-        return $this->fetchAndIterateService->handle('wow/mount/', 'mounts', 'WorldOfWarcraft\Mount');
+        return $this->fetchAndIterateService->handle('wow/mount/', 'mounts', MountInterface::HYDRATE_CLASS);
     }
 }

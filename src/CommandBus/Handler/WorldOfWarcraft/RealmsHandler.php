@@ -9,6 +9,7 @@ use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\PetsCommand;
 use function React\Promise\resolve;
 use function WyriHaximus\React\futureFunctionPromise;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\RealmsCommand;
+use WyriMaps\BattleNet\Resource\WorldOfWarcraft\RealmInterface;
 
 final class RealmsHandler
 {
@@ -33,6 +34,6 @@ final class RealmsHandler
      */
     public function handle(RealmsCommand $command): PromiseInterface
     {
-        return $this->fetchAndIterateService->handle('wow/realm/status', 'realms', 'WorldOfWarcraft\Realm');
+        return $this->fetchAndIterateService->handle('wow/realm/status', 'realms', RealmInterface::HYDRATE_CLASS);
     }
 }

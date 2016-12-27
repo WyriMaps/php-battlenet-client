@@ -10,6 +10,7 @@ use function React\Promise\resolve;
 use function WyriHaximus\React\futureFunctionPromise;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\RealmsCommand;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\ZonesCommand;
+use WyriMaps\BattleNet\Resource\WorldOfWarcraft\ZoneInterface;
 
 final class ZonesHandler
 {
@@ -34,6 +35,6 @@ final class ZonesHandler
      */
     public function handle(ZonesCommand $command): PromiseInterface
     {
-        return $this->fetchAndIterateService->handle('wow/zone/', 'zones', 'WorldOfWarcraft\Zone');
+        return $this->fetchAndIterateService->handle('wow/zone/', 'zones', ZoneInterface::HYDRATE_CLASS);
     }
 }
