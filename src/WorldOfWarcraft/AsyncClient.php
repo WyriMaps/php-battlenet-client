@@ -12,6 +12,7 @@ use Rx\React\Promise;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\MountsCommand;
 use function ApiClients\Tools\Rx\unwrapObservableFromPromise;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\PetsCommand;
+use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\RealmsCommand;
 
 class AsyncClient
 {
@@ -48,13 +49,9 @@ class AsyncClient
      */
     public function realms(): ObservableInterface
     {
-        return Promise::toObservable(
-            $this->client->handle(new SimpleRequestCommand('wow/realm/status'))
-        )->flatMap(function (ResponseInterface $response) {
-            return Observable::fromArray($response->getBody()->getJson()['realms']);
-        })->flatMap(function ($realm) {
-            return Promise::toObservable($this->client->handle(new HydrateCommand('WorldOfWarcraft\Realm', $realm)));
-        });
+        return unwrapObservableFromPromise($this->client->handle(
+            new RealmsCommand()
+        ));
     }
 
     /**
