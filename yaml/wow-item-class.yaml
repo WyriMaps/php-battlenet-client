@@ -1,0 +1,5 @@
+class: WorldOfWarcraft\ItemClass
+properties:
+  class: int
+  name: string
+  subclasses: array

@@ -1,0 +1,5 @@
+class: WorldOfWarcraft\Npc
+properties:
+  id: int
+  name: string
+  urlSlug: string

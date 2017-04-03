@@ -1,0 +1,10 @@
+class: WorldOfWarcraft\Spell
+properties:
+  id: int
+  name: string
+  icon: string
+  description: string
+  range: string
+  powerCost: string
+  castTime: string
+  cooldown: string

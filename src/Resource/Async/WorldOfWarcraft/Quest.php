@@ -2,11 +2,11 @@
 
 namespace WyriMaps\BattleNet\Resource\Async\WorldOfWarcraft;
 
-use WyriMaps\BattleNet\Resource\WorldOfWarcraft\Mount as BaseMount;
+use WyriMaps\BattleNet\Resource\WorldOfWarcraft\Quest as BaseQuest;
 
-class Mount extends BaseMount
+class Quest extends BaseQuest
 {
-    public function refresh() : Mount
+    public function refresh() : Quest
     {
         return $this->wait($this->callAsync('refresh'));
     }

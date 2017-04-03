@@ -2,11 +2,11 @@
 
 namespace WyriMaps\BattleNet\Resource\Async\WorldOfWarcraft;
 
-use WyriMaps\BattleNet\Resource\WorldOfWarcraft\Mount as BaseMount;
+use WyriMaps\BattleNet\Resource\WorldOfWarcraft\Recipe as BaseRecipe;
 
-class Mount extends BaseMount
+class Recipe extends BaseRecipe
 {
-    public function refresh() : Mount
+    public function refresh() : Recipe
     {
         return $this->wait($this->callAsync('refresh'));
     }

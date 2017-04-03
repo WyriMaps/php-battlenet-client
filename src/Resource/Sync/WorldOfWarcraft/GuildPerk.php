@@ -2,11 +2,11 @@
 
 namespace WyriMaps\BattleNet\Resource\Sync\WorldOfWarcraft;
 
-use WyriMaps\BattleNet\Resource\WorldOfWarcraft\Pet as BasePet;
+use WyriMaps\BattleNet\Resource\WorldOfWarcraft\GuildPerk as BaseGuildPerk;
 
-class Pet extends BasePet
+class GuildPerk extends BaseGuildPerk
 {
-    public function refresh() : Pet
+    public function refresh() : GuildPerk
     {
         return $this->wait($this->callAsync('refresh'));
     }

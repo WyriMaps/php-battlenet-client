@@ -2,11 +2,11 @@
 
 namespace WyriMaps\BattleNet\Resource\Async\WorldOfWarcraft;
 
-use WyriMaps\BattleNet\Resource\WorldOfWarcraft\Mount as BaseMount;
+use WyriMaps\BattleNet\Resource\WorldOfWarcraft\Spell as BaseSpell;
 
-class Mount extends BaseMount
+class Spell extends BaseSpell
 {
-    public function refresh() : Mount
+    public function refresh() : Spell
     {
         return $this->wait($this->callAsync('refresh'));
     }

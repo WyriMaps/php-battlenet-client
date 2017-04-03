@@ -1,0 +1,11 @@
+class: WorldOfWarcraft\GuildAchievement
+properties:
+  id: int
+  title: string
+  points: int
+  description: string
+  rewardItems: array
+  icon: string
+  criteria: array
+  accountWide: bool
+  factionId: int

@@ -1,0 +1,4 @@
+class: WorldOfWarcraft\Zone\Location
+properties:
+  id: int
+  name: string

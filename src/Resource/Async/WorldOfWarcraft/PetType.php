@@ -2,11 +2,11 @@
 
 namespace WyriMaps\BattleNet\Resource\Async\WorldOfWarcraft;
 
-use WyriMaps\BattleNet\Resource\WorldOfWarcraft\Mount as BaseMount;
+use WyriMaps\BattleNet\Resource\WorldOfWarcraft\PetType as BasePetType;
 
-class Mount extends BaseMount
+class PetType extends BasePetType
 {
-    public function refresh() : Mount
+    public function refresh() : PetType
     {
         return $this->wait($this->callAsync('refresh'));
     }

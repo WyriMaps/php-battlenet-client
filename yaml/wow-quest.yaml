@@ -1,0 +1,8 @@
+class: WorldOfWarcraft\Quest
+properties:
+  id: int
+  title: string
+  reqLevel: int
+  suggestedPartyMembers: int
+  category: string
+  level: int

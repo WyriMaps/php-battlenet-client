@@ -2,11 +2,11 @@
 
 namespace WyriMaps\BattleNet\Resource\Async\WorldOfWarcraft;
 
-use WyriMaps\BattleNet\Resource\WorldOfWarcraft\Mount as BaseMount;
+use WyriMaps\BattleNet\Resource\WorldOfWarcraft\Race as BaseRace;
 
-class Mount extends BaseMount
+class Race extends BaseRace
 {
-    public function refresh() : Mount
+    public function refresh() : Race
     {
         return $this->wait($this->callAsync('refresh'));
     }

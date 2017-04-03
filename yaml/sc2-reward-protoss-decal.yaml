@@ -1,0 +1,9 @@
+class: StarCraft2\ProtossDecal
+properties:
+  id: int
+  title: string
+  icon:
+    type: Icon
+    annotations:
+      nested: StarCraft2\Icon
+  achievementId: int

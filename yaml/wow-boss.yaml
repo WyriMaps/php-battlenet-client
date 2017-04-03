@@ -1,0 +1,18 @@
+class: WorldOfWarcraft\Boss
+properties:
+  id: int
+  name: string
+  urlSlug: string
+  description: string
+  zoneId: int
+  availableInNormalMode: bool
+  availableInHeroicMode: bool
+  heatlh: int
+  heroicHeatlh: int
+  level: int
+  heroicLevel: int
+  journalId: int
+  npcs:
+    type: Npc
+    annotations:
+      nested: WorldOfWarcraft\Npc

@@ -1,0 +1,6 @@
+class: WorldOfWarcraft\GuildReward
+properties:
+  minGuildLevel: int
+  minGuildRepLevel: int
+  achievement: array
+  item: array

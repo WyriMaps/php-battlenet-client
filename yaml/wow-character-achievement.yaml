@@ -1,0 +1,12 @@
+class: WorldOfWarcraft\CharacterAchievement
+properties:
+  id: int
+  title: string
+  points: int
+  description: string
+  reward: string
+  rewardItems: array
+  icon: string
+  criteria: array
+  accountWide: bool
+  factionId: int

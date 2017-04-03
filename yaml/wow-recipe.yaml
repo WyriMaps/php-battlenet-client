@@ -1,0 +1,6 @@
+class: WorldOfWarcraft\Recipe
+properties:
+  id: int
+  name: string
+  profession: string
+  icon: string

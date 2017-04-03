@@ -1,0 +1,4 @@
+class: WorldOfWarcraft\GuildPerk
+properties:
+  guildLevel: int
+  spell: array

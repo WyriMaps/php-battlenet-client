@@ -1,0 +1,8 @@
+class: StarCraft2\Icon
+properties:
+  x: int
+  y: int
+  w: int
+  h: int
+  offset: int
+  url: string

@@ -2,11 +2,11 @@
 
 namespace WyriMaps\BattleNet\Resource\Async\WorldOfWarcraft;
 
-use WyriMaps\BattleNet\Resource\WorldOfWarcraft\Mount as BaseMount;
+use WyriMaps\BattleNet\Resource\WorldOfWarcraft\GuildPerk as BaseGuildPerk;
 
-class Mount extends BaseMount
+class GuildPerk extends BaseGuildPerk
 {
-    public function refresh() : Mount
+    public function refresh() : GuildPerk
     {
         return $this->wait($this->callAsync('refresh'));
     }

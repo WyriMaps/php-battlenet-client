@@ -1,0 +1,26 @@
+class: WorldOfWarcraft\Zone
+properties:
+  id: int
+  name: string
+  urlSlug: string
+  description: string
+  location:
+    type: Zone\Location
+    annotations:
+      nested: WorldOfWarcraft\Zone\Location
+  expansionId: int
+  numPlayers: string
+  isDungeon: bool
+  isRaid: bool
+  advisedMinLevel: int
+  advisedMaxLevel: int
+  advisedHeroicMinLevel: int
+  advisedHeroicMaxLevel: int
+  availableModes: array
+  lfgNormalMinGearLevel: int
+  lfgHeroicMinGearLevel: int
+  floors: int
+  bosses:
+    type: array
+    annotations:
+      collection: WorldOfWarcraft\Boss

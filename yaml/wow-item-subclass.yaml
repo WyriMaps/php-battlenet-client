@@ -1,0 +1,4 @@
+class: WorldOfWarcraft\ItemSubclass
+properties:
+  subclass: int
+  name: string

@@ -1,0 +1,6 @@
+class: WorldOfWarcraft\Race
+properties:
+  id: int
+  mask: int
+  side: string
+  name: string

@@ -2,11 +2,11 @@
 
 namespace WyriMaps\BattleNet\Resource\Sync\WorldOfWarcraft;
 
-use WyriMaps\BattleNet\Resource\WorldOfWarcraft\Pet as BasePet;
+use WyriMaps\BattleNet\Resource\WorldOfWarcraft\Recipe as BaseRecipe;
 
-class Pet extends BasePet
+class Recipe extends BaseRecipe
 {
-    public function refresh() : Pet
+    public function refresh() : Recipe
     {
         return $this->wait($this->callAsync('refresh'));
     }

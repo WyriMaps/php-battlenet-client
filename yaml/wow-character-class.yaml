@@ -1,0 +1,6 @@
+class: WorldOfWarcraft\CharacterClass
+properties:
+  id: int
+  mask: int
+  powerType: string
+  name: string

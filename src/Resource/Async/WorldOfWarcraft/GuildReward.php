@@ -2,11 +2,11 @@
 
 namespace WyriMaps\BattleNet\Resource\Async\WorldOfWarcraft;
 
-use WyriMaps\BattleNet\Resource\WorldOfWarcraft\Mount as BaseMount;
+use WyriMaps\BattleNet\Resource\WorldOfWarcraft\GuildReward as BaseGuildReward;
 
-class Mount extends BaseMount
+class GuildReward extends BaseGuildReward
 {
-    public function refresh() : Mount
+    public function refresh() : GuildReward
     {
         return $this->wait($this->callAsync('refresh'));
     }

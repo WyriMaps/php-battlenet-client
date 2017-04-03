@@ -1,0 +1,8 @@
+class: WorldOfWarcraft\PetType
+properties:
+  id: int
+  key: string
+  name: string
+  typeAbilityId: int
+  strongAgainstId: int
+  weakAgainstId: int

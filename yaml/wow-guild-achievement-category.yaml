@@ -1,0 +1,6 @@
+class: WorldOfWarcraft\GuildAchievementCategory
+properties:
+  id: int
+  name: string
+  achievements: array
+
