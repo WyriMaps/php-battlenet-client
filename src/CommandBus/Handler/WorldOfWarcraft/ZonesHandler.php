@@ -35,6 +35,6 @@ final class ZonesHandler
      */
     public function handle(ZonesCommand $command): PromiseInterface
     {
-        return $this->fetchAndIterateService->handle('wow/zone/', 'zones', ZoneInterface::HYDRATE_CLASS);
+        return resolve($this->fetchAndIterateService->iterate('wow/zone/', 'zones', ZoneInterface::HYDRATE_CLASS));
     }
 }

@@ -14,7 +14,7 @@ final class PetsHandlerTest extends TestCase
     {
         $command = new PetsCommand();
         $service = $this->prophesize(FetchAndIterateService::class);
-        $service->handle('wow/pet/', 'pets', PetInterface::HYDRATE_CLASS)->shouldBeCalled();
+        $service->iterate('wow/pet/', 'pets', PetInterface::HYDRATE_CLASS)->shouldBeCalled();
         $handler = new PetsHandler($service->reveal());
         $handler->handle($command);
     }

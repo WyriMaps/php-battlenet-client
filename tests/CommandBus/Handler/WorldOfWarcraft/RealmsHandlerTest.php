@@ -14,7 +14,7 @@ final class RealmsHandlerTest extends TestCase
     {
         $command = new RealmsCommand();
         $service = $this->prophesize(FetchAndIterateService::class);
-        $service->handle('wow/realm/status', 'realms', RealmInterface::HYDRATE_CLASS)->shouldBeCalled();
+        $service->iterate('wow/realm/status', 'realms', RealmInterface::HYDRATE_CLASS)->shouldBeCalled();
         $handler = new RealmsHandler($service->reveal());
         $handler->handle($command);
     }

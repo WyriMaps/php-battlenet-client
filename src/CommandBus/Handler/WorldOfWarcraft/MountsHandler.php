@@ -33,6 +33,6 @@ final class MountsHandler
      */
     public function handle(MountsCommand $command): PromiseInterface
     {
-        return $this->fetchAndIterateService->handle('wow/mount/', 'mounts', MountInterface::HYDRATE_CLASS);
+        return resolve($this->fetchAndIterateService->iterate('wow/mount/', 'mounts', MountInterface::HYDRATE_CLASS));
     }
 }

@@ -14,7 +14,7 @@ final class BattleGroupsHandlerTest extends TestCase
     {
         $command = new BattleGroupsCommand();
         $service = $this->prophesize(FetchAndIterateService::class);
-        $service->handle('wow/data/battlegroups/', 'battlegroups', BattleGroupInterface::HYDRATE_CLASS)->shouldBeCalled();
+        $service->iterate('wow/data/battlegroups/', 'battlegroups', BattleGroupInterface::HYDRATE_CLASS)->shouldBeCalled();
         $handler = new BattleGroupsHandler($service->reveal());
         $handler->handle($command);
     }

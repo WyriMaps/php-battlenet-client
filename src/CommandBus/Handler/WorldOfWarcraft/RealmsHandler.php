@@ -34,6 +34,8 @@ final class RealmsHandler
      */
     public function handle(RealmsCommand $command): PromiseInterface
     {
-        return $this->fetchAndIterateService->handle('wow/realm/status', 'realms', RealmInterface::HYDRATE_CLASS);
+        return resolve(
+            $this->fetchAndIterateService->iterate('wow/realm/status', 'realms', RealmInterface::HYDRATE_CLASS)
+        );
     }
 }

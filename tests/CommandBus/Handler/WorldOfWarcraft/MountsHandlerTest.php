@@ -14,7 +14,7 @@ final class MountsHandlerTest extends TestCase
     {
         $command = new MountsCommand();
         $service = $this->prophesize(FetchAndIterateService::class);
-        $service->handle('wow/mount/', 'mounts', MountInterface::HYDRATE_CLASS)->shouldBeCalled();
+        $service->iterate('wow/mount/', 'mounts', MountInterface::HYDRATE_CLASS)->shouldBeCalled();
         $handler = new MountsHandler($service->reveal());
         $handler->handle($command);
     }

@@ -33,6 +33,6 @@ final class PetsHandler
      */
     public function handle(PetsCommand $command): PromiseInterface
     {
-        return $this->fetchAndIterateService->handle('wow/pet/', 'pets', PetInterface::HYDRATE_CLASS);
+        return resolve($this->fetchAndIterateService->iterate('wow/pet/', 'pets', PetInterface::HYDRATE_CLASS));
     }
 }

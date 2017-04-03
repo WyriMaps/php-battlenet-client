@@ -4,6 +4,7 @@ namespace WyriMaps\BattleNet\CommandBus\Handler\WorldOfWarcraft;
 
 use ApiClients\Tools\Services\Client\FetchAndIterateService;
 use React\Promise\PromiseInterface;
+use function React\Promise\resolve;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\BattleGroupsCommand;
 use WyriMaps\BattleNet\Resource\WorldOfWarcraft\BattleGroupInterface;
 
@@ -30,10 +31,10 @@ final class BattleGroupsHandler
      */
     public function handle(BattleGroupsCommand $command): PromiseInterface
     {
-        return $this->fetchAndIterateService->handle(
+        return resolve($this->fetchAndIterateService->iterate(
             'wow/data/battlegroups/',
             'battlegroups',
             BattleGroupInterface::HYDRATE_CLASS
-        );
+        ));
     }
 }

@@ -14,7 +14,7 @@ final class ZonesHandlerTest extends TestCase
     {
         $command = new ZonesCommand();
         $service = $this->prophesize(FetchAndIterateService::class);
-        $service->handle('wow/zone/', 'zones', ZoneInterface::HYDRATE_CLASS)->shouldBeCalled();
+        $service->iterate('wow/zone/', 'zones', ZoneInterface::HYDRATE_CLASS)->shouldBeCalled();
         $handler = new ZonesHandler($service->reveal());
         $handler->handle($command);
     }
