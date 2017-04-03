@@ -11,11 +11,12 @@
     ],
     "require": {
         "php": "^7.0",
+        "api-clients/client-services": "dev-master",
         "api-clients/foundation": "dev-master"
     },
     "require-dev": {
         "api-clients/resource-generator": "dev-master",
-        "api-clients/test-utilities": "dev-master"
+        "api-clients/test-utilities": "^2.0"
     },
     "autoload": {
         "psr-4": {
@@ -25,6 +26,17 @@
     "autoload-dev": {
         "psr-4": {
             "WyriMaps\\Tests\\BattleNet\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "api-clients": {
+            "command-bus": {
+                "path": "src/CommandBus",
+                "namespace": "WyriMaps\\BattleNet\\CommandBus"
+            }
         }
     }
 }

@@ -1,0 +1,11 @@
+class: WorldOfWarcraft\Realm
+properties:
+  type: string
+  population: string
+  queue: bool
+  status: bool
+  name: string
+  battlegroup: string
+  locale: string
+  timezone: string
+  connected_realms: array
