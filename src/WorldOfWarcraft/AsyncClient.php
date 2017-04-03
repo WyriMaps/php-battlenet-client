@@ -9,6 +9,11 @@ use Psr\Http\Message\ResponseInterface;
 use Rx\Observable;
 use Rx\ObservableInterface;
 use Rx\React\Promise;
+use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\MountsCommand;
+use function ApiClients\Tools\Rx\unwrapObservableFromPromise;
+use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\PetsCommand;
+use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\RealmsCommand;
+use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\ZonesCommand;
 
 class AsyncClient
 {
@@ -33,13 +38,9 @@ class AsyncClient
      */
     public function mounts(): ObservableInterface
     {
-        return Promise::toObservable(
-            $this->client->handle(new SimpleRequestCommand('wow/mount/'))
-        )->flatMap(function (ResponseInterface $response) {
-            return Observable::fromArray($response->getBody()->getJson()['mounts']);
-        })->flatMap(function ($mount) {
-            return Promise::toObservable($this->client->handle(new HydrateCommand('WorldOfWarcraft\Mount', $mount)));
-        });
+        return unwrapObservableFromPromise($this->client->handle(
+            new MountsCommand()
+        ));
     }
 
     /**
@@ -49,13 +50,9 @@ class AsyncClient
      */
     public function realms(): ObservableInterface
     {
-        return Promise::toObservable(
-            $this->client->handle(new SimpleRequestCommand('wow/realm/status'))
-        )->flatMap(function (ResponseInterface $response) {
-            return Observable::fromArray($response->getBody()->getJson()['realms']);
-        })->flatMap(function ($realm) {
-            return Promise::toObservable($this->client->handle(new HydrateCommand('WorldOfWarcraft\Realm', $realm)));
-        });
+        return unwrapObservableFromPromise($this->client->handle(
+            new RealmsCommand()
+        ));
     }
 
     /**
@@ -65,13 +62,9 @@ class AsyncClient
      */
     public function pets(): ObservableInterface
     {
-        return Promise::toObservable(
-            $this->client->handle(new SimpleRequestCommand('wow/pet/'))
-        )->flatMap(function (ResponseInterface $response) {
-            return Observable::fromArray($response->getBody()->getJson()['pets']);
-        })->flatMap(function ($pet) {
-            return Promise::toObservable($this->client->handle(new HydrateCommand('WorldOfWarcraft\Pet', $pet)));
-        });
+        return unwrapObservableFromPromise($this->client->handle(
+            new PetsCommand()
+        ));
     }
 
     /**
@@ -81,12 +74,8 @@ class AsyncClient
      */
     public function zones(): ObservableInterface
     {
-        return Promise::toObservable(
-            $this->client->handle(new SimpleRequestCommand('wow/zone/'))
-        )->flatMap(function (ResponseInterface $response) {
-            return Observable::fromArray($response->getBody()->getJson()['zones']);
-        })->flatMap(function ($zone) {
-            return Promise::toObservable($this->client->handle(new HydrateCommand('WorldOfWarcraft\Zone', $zone)));
-        });
+        return unwrapObservableFromPromise($this->client->handle(
+            new ZonesCommand()
+        ));
     }
 }

@@ -6,6 +6,8 @@ use ApiClients\Foundation\Resource\ResourceInterface;
 
 interface ZoneInterface extends ResourceInterface
 {
+    const HYDRATE_CLASS = 'WorldOfWarcraft\\Zone';
+
     /**
      * @return int
      */

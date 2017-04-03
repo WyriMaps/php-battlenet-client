@@ -6,6 +6,8 @@ use ApiClients\Foundation\Resource\ResourceInterface;
 
 interface RealmInterface extends ResourceInterface
 {
+    const HYDRATE_CLASS = 'WorldOfWarcraft\\Realm';
+
     /**
      * @return string
      */
