@@ -1,0 +1,8 @@
+yaml_location: yaml
+api_settings: WyriMaps\BattleNet\ApiSettings
+src:
+  path: src/Resource
+  namespace: WyriMaps\BattleNet\Resource
+tests:
+  path: tests/Resource
+  namespace: WyriMaps\Tests\BattleNet\Resource

@@ -1,59 +1,65 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace WyriMaps\BattleNet\Resource\WorldOfWarcraft;
 
-use WyriHaximus\ApiClient\Resource\TransportAwareTrait;
+use ApiClients\Foundation\Hydrator\Annotations\EmptyResource;
+use ApiClients\Foundation\Resource\AbstractResource;
 
-abstract class Pet implements PetInterface
+/**
+ * @EmptyResource("WorldOfWarcraft\EmptyPet")
+ */
+abstract class Pet extends AbstractResource implements PetInterface
 {
-    use TransportAwareTrait;
     /**
      * @var bool
      */
     protected $canBattle;
+
     /**
      * @var int
      */
     protected $creatureId;
+
     /**
      * @var string
      */
     protected $name;
+
     /**
      * @var string
      */
     protected $family;
+
     /**
      * @var string
      */
     protected $icon;
+
     /**
      * @var int
      */
     protected $qualityId;
+
     /**
      * @var array
      */
     protected $stats;
+
     /**
      * @var array
      */
     protected $strongAgainst;
+
     /**
      * @var int
      */
     protected $typeId;
+
     /**
      * @var array
      */
     protected $weakAgainst;
-    /**
-     * @return int
-     */
-    public function id() : int
-    {
-        return $this->creatureId;
-    }
+
     /**
      * @return bool
      */
@@ -61,6 +67,7 @@ abstract class Pet implements PetInterface
     {
         return $this->canBattle;
     }
+
     /**
      * @return int
      */
@@ -68,6 +75,7 @@ abstract class Pet implements PetInterface
     {
         return $this->creatureId;
     }
+
     /**
      * @return string
      */
@@ -75,6 +83,7 @@ abstract class Pet implements PetInterface
     {
         return $this->name;
     }
+
     /**
      * @return string
      */
@@ -82,6 +91,7 @@ abstract class Pet implements PetInterface
     {
         return $this->family;
     }
+
     /**
      * @return string
      */
@@ -89,6 +99,7 @@ abstract class Pet implements PetInterface
     {
         return $this->icon;
     }
+
     /**
      * @return int
      */
@@ -96,6 +107,7 @@ abstract class Pet implements PetInterface
     {
         return $this->qualityId;
     }
+
     /**
      * @return array
      */
@@ -103,6 +115,7 @@ abstract class Pet implements PetInterface
     {
         return $this->stats;
     }
+
     /**
      * @return array
      */
@@ -110,6 +123,7 @@ abstract class Pet implements PetInterface
     {
         return $this->strongAgainst;
     }
+
     /**
      * @return int
      */
@@ -117,6 +131,7 @@ abstract class Pet implements PetInterface
     {
         return $this->typeId;
     }
+
     /**
      * @return array
      */
