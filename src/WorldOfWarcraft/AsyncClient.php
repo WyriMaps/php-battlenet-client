@@ -3,17 +3,13 @@
 namespace WyriMaps\BattleNet\WorldOfWarcraft;
 
 use ApiClients\Foundation\Client;
-use ApiClients\Foundation\Hydrator\CommandBus\Command\HydrateCommand;
-use ApiClients\Foundation\Transport\CommandBus\Command\SimpleRequestCommand;
-use Psr\Http\Message\ResponseInterface;
-use Rx\Observable;
 use Rx\ObservableInterface;
-use Rx\React\Promise;
+use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\BattleGroupsCommand;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\MountsCommand;
-use function ApiClients\Tools\Rx\unwrapObservableFromPromise;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\PetsCommand;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\RealmsCommand;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\ZonesCommand;
+use function ApiClients\Tools\Rx\unwrapObservableFromPromise;
 
 class AsyncClient
 {
@@ -29,6 +25,18 @@ class AsyncClient
     public function __construct(Client $client)
     {
         $this->client = $client;
+    }
+
+    /**
+     * List all battle groups
+     *
+     * @return ObservableInterface
+     */
+    public function battlegroups(): ObservableInterface
+    {
+        return unwrapObservableFromPromise($this->client->handle(
+            new BattleGroupsCommand()
+        ));
     }
 
     /**
