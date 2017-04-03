@@ -1,0 +1,4 @@
+class: WorldOfWarcraft\BattleGroup
+properties:
+  name: string
+  slug: string
