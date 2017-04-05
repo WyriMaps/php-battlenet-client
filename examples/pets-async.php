@@ -10,8 +10,10 @@ require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'vendor/autoload.php';
 $loop = Factory::create();
 $client = new AsyncClient(require 'resolve_apikey.php', $loop);
 
-$client->worldOfWarcraft()->pets()->subscribe(new CallbackObserver(function (PetInterface $pet) {
+$client->worldOfWarcraft()->pets()->subscribe(function (PetInterface $pet) {
     echo $pet->name(), PHP_EOL;
-}));
+}, function ($e) {
+    echo (string)$e;
+});
 
 $loop->run();

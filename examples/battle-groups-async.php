@@ -10,10 +10,10 @@ require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'vendor/autoload.php';
 $loop = Factory::create();
 $client = new AsyncClient(require 'resolve_apikey.php', $loop);
 
-$client->worldOfWarcraft()->battleGroups()->subscribe(new CallbackObserver(function (BattleGroupInterface $battlegroup) {
+$client->worldOfWarcraft()->battleGroups()->subscribe(function (BattleGroupInterface $battlegroup) {
     echo $battlegroup->name(), PHP_EOL;
 }, function ($e) {
     echo (string)$e;
-}));
+});
 
 $loop->run();

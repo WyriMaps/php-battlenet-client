@@ -11,8 +11,10 @@ require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'vendor/autoload.php';
 $loop = Factory::create();
 $client = new AsyncClient(require 'resolve_apikey.php', $loop);
 
-$client->worldOfWarcraft()->zones()->subscribe(new CallbackObserver(function (ZoneInterface $zone) {
+$client->worldOfWarcraft()->zones()->subscribe(function (ZoneInterface $zone) {
     resource_pretty_print($zone);
-}));
+}, function ($e) {
+    echo (string)$e;
+});
 
 $loop->run();

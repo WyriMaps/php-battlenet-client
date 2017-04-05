@@ -11,8 +11,10 @@ require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'vendor/autoload.php';
 $loop = Factory::create();
 $client = new AsyncClient(require 'resolve_apikey.php', $loop);
 
-$client->worldOfWarcraft()->realms()->subscribe(new CallbackObserver(function (RealmInterface $realm) {
+$client->worldOfWarcraft()->realms()->subscribe(function (RealmInterface $realm) {
     resource_pretty_print($realm);
-}, function ($e) {echo (string)$e;}));
+}, function ($e) {
+    echo (string)$e;
+});
 
 $loop->run();
