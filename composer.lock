@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "33c288e8c0e16c0fdb55beac4cffdab6",
+    "content-hash": "28e77bc84a3a420f6c1f7e9facbfe72c",
     "packages": [
         {
             "name": "api-clients/client-services",
@@ -264,6 +264,50 @@
             ],
             "description": "Request middleware",
             "time": "2017-03-04T11:38:16+00:00"
+        },
+        {
+            "name": "api-clients/middleware-user-agent",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-api-clients/middleware-user-agent.git",
+                "reference": "1eea0e51e3ce48005f2cbdd5d7a99c555e833371"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-api-clients/middleware-user-agent/zipball/1eea0e51e3ce48005f2cbdd5d7a99c555e833371",
+                "reference": "1eea0e51e3ce48005f2cbdd5d7a99c555e833371",
+                "shasum": ""
+            },
+            "require": {
+                "api-clients/middleware": "^2.0",
+                "joshdifabio/composed": "^1.0",
+                "ocramius/package-versions": "^1.1",
+                "php": "^7.0",
+                "psr/http-message": "^1.0"
+            },
+            "require-dev": {
+                "api-clients/test-utilities": "^3.0.1",
+                "ringcentral/psr7": "^1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ApiClients\\Middleware\\UserAgent\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com"
+                }
+            ],
+            "description": "User Agent header middleware",
+            "time": "2017-03-10T19:46:50+00:00"
         },
         {
             "name": "api-clients/resource",
@@ -1339,6 +1383,54 @@
             "time": "2016-01-12T11:39:06+00:00"
         },
         {
+            "name": "ocramius/package-versions",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Ocramius/PackageVersions.git",
+                "reference": "51e867c70f0799790b3e82276875414ce13daaca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Ocramius/PackageVersions/zipball/51e867c70f0799790b3e82276875414ce13daaca",
+                "reference": "51e867c70f0799790b3e82276875414ce13daaca",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "php": "~7.0"
+            },
+            "require-dev": {
+                "composer/composer": "^1.3",
+                "ext-zip": "*",
+                "phpunit/phpunit": "^5.4.7"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "PackageVersions\\Installer",
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PackageVersions\\": "src/PackageVersions"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com"
+                }
+            ],
+            "description": "Composer plugin that provides efficient querying for installed package versions (no runtime IO)",
+            "time": "2016-12-30T09:49:15+00:00"
+        },
+        {
             "name": "php-di/invoker",
             "version": "1.3.3",
             "source": {
@@ -2339,7 +2431,7 @@
                 }
             ],
             "description": "Resource from YAML generation tool",
-            "time": "2017-01-21T23:14:42+00:00"
+            "time": "2017-01-21 23:14:42"
         },
         {
             "name": "api-clients/resource-test-utilities",
@@ -2386,7 +2478,7 @@
                     "email": "ceesjank@gmail.com"
                 }
             ],
-            "time": "2017-02-14T16:42:57+00:00"
+            "time": "2017-02-14 16:42:57"
         },
         {
             "name": "api-clients/test-utilities",
