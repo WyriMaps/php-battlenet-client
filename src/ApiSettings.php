@@ -23,6 +23,7 @@ final class ApiSettings
         FoundationOptions::TRANSPORT_OPTIONS => [
             TransportOptions::HOST => Region::DEFAULT,
             TransportOptions::MIDDLEWARE => [
+                JsonDecodeMiddleware::class,
                 UserAgentMiddleware::class,
             ],
             TransportOptions::DEFAULT_REQUEST_OPTIONS => [
@@ -42,10 +43,7 @@ final class ApiSettings
         $options[FoundationOptions::HYDRATOR_OPTIONS][HydratorOptions::NAMESPACE_SUFFIX] = $suffix;
 
         if (!empty($apiKey)) {
-            $options[FoundationOptions::TRANSPORT_OPTIONS][TransportOptions::MIDDLEWARE] = [
-                JsonDecodeMiddleware::class,
-                ApiKeyMiddleware::class,
-            ];
+            $options[FoundationOptions::TRANSPORT_OPTIONS][TransportOptions::MIDDLEWARE][] = ApiKeyMiddleware::class;
             $options[FoundationOptions::TRANSPORT_OPTIONS][TransportOptions::DEFAULT_REQUEST_OPTIONS] = [
                 ApiKeyMiddleware::class => [
                     Options::API_KEY => $apiKey,
