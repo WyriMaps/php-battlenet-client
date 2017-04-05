@@ -32,7 +32,7 @@ class AsyncClient
      *
      * @return ObservableInterface
      */
-    public function battlegroups(): ObservableInterface
+    public function battleGroups(): ObservableInterface
     {
         return unwrapObservableFromPromise($this->client->handle(
             new BattleGroupsCommand()
