@@ -5,6 +5,7 @@ namespace WyriMaps\BattleNet\WorldOfWarcraft;
 use ApiClients\Foundation\Client;
 use Rx\ObservableInterface;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\BattleGroupsCommand;
+use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\BossesCommand;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\MountsCommand;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\PetsCommand;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\RealmsCommand;
@@ -36,6 +37,18 @@ class AsyncClient
     {
         return unwrapObservableFromPromise($this->client->handle(
             new BattleGroupsCommand()
+        ));
+    }
+
+    /**
+     * List all bosses
+     *
+     * @return ObservableInterface
+     */
+    public function bosses(): ObservableInterface
+    {
+        return unwrapObservableFromPromise($this->client->handle(
+            new BossesCommand()
         ));
     }
 
