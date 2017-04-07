@@ -2,7 +2,7 @@
 
 namespace WyriMaps\BattleNet\WorldOfWarcraft;
 
-use ApiClients\Foundation\Client;
+use ApiClients\Foundation\Client as FoundationClient;
 use Rx\ObservableInterface;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\BattleGroupsCommand;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\MountsCommand;
@@ -14,15 +14,15 @@ use function ApiClients\Tools\Rx\unwrapObservableFromPromise;
 class AsyncClient
 {
     /**
-     * @var Client
+     * @var FoundationClient
      */
     protected $client;
 
     /**
      * AsyncClient constructor.
-     * @param Client $client
+     * @param FoundationClient $client
      */
-    public function __construct(Client $client)
+    public function __construct(FoundationClient $client)
     {
         $this->client = $client;
     }

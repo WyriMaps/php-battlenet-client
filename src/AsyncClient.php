@@ -3,11 +3,10 @@ declare(strict_types=1);
 
 namespace WyriMaps\BattleNet;
 
-use React\EventLoop\LoopInterface;
+use ApiClients\Foundation\Client;
 use ApiClients\Foundation\Factory;
-use ApiClients\Foundation\Transport\Client;
+use React\EventLoop\LoopInterface;
 use WyriMaps\BattleNet\WorldOfWarcraft\AsyncClient as WowClient;
-use function React\Promise\resolve;
 
 final class AsyncClient
 {
