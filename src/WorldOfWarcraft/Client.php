@@ -90,6 +90,21 @@ class Client
     }
 
     /**
+     * List all pet types
+     *
+     * @return array
+     */
+    public function petTypes(): array
+    {
+        return await(
+            Promise::fromObservable(
+                $this->asyncClient->petTypes()->toArray()
+            ),
+            $this->loop
+        );
+    }
+
+    /**
      * List all zones
      *
      * @return array
