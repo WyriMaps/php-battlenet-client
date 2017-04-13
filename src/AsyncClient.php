@@ -1,5 +1,4 @@
-<?php
-declare(strict_types=1);
+<?php declare(strict_types=1);
 
 namespace WyriMaps\BattleNet;
 
@@ -10,18 +9,30 @@ use WyriMaps\BattleNet\WorldOfWarcraft\AsyncClient as WowClient;
 
 final class AsyncClient
 {
-    protected $transport;
+    /**
+     * @var Client
+     */
+    private $client;
 
+    /**
+     * @param string $apiKey
+     * @param LoopInterface $loop
+     * @param Client $client
+     */
     public function __construct(string $apiKey, LoopInterface $loop, Client $client = null)
     {
         if (!($client instanceof Client)) {
-            $this->options = ApiSettings::getOptions($apiKey, 'Async');
-            $client = Factory::create($loop, $this->options);
+            $options = ApiSettings::getOptions($apiKey, 'Async');
+            $client = Factory::create($loop, $options);
         }
+
         $this->client = $client;
     }
 
-    public function worldOfWarcraft()
+    /**
+     * @return WowClient
+     */
+    public function worldOfWarcraft(): WowClient
     {
         return new WowClient($this->client);
     }
