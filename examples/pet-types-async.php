@@ -1,5 +1,6 @@
 <?php
 
+use function ApiClients\Foundation\resource_pretty_print;
 use React\EventLoop\Factory;
 use WyriMaps\BattleNet\AsyncClient;
 use WyriMaps\BattleNet\Resource\WorldOfWarcraft\PetTypeInterface;
@@ -10,7 +11,7 @@ $loop = Factory::create();
 $client = new AsyncClient(require 'resolve_apikey.php', $loop);
 
 $client->worldOfWarcraft()->petTypes()->subscribe(function (PetTypeInterface $petType) {
-    echo $petType->name(), PHP_EOL;
+    resource_pretty_print($petType);
 }, function ($e) {
     echo (string)$e;
 });

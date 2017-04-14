@@ -1,5 +1,6 @@
 <?php
 
+use function ApiClients\Foundation\resource_pretty_print;
 use React\EventLoop\Factory;
 use Rx\Observer\CallbackObserver;
 use WyriMaps\BattleNet\AsyncClient;
@@ -11,7 +12,7 @@ $loop = Factory::create();
 $client = new AsyncClient(require 'resolve_apikey.php', $loop);
 
 $client->worldOfWarcraft()->mounts()->subscribe(function (MountInterface $mount) {
-    echo $mount->name(), PHP_EOL;
+    resource_pretty_print($mount);
 }, function ($e) {
     echo (string)$e;
 });
