@@ -1,5 +1,6 @@
 {
     "name": "wyrimaps/battlenet-client",
+    "description": "Battle.net API Client",
     "license": "MIT",
     "minimum-stability": "dev",
     "prefer-stable": true,
