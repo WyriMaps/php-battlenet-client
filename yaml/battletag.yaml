@@ -1,0 +1,4 @@
+class: BattleTag
+properties:
+  battletag: string
+  id: int
