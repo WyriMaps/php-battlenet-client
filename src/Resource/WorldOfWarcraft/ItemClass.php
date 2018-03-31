@@ -28,7 +28,7 @@ abstract class ItemClass extends AbstractResource implements ItemClassInterface
     /**
      * @return int
      */
-    public function class() : int
+    public function class(): int
     {
         return $this->class;
     }
@@ -36,7 +36,7 @@ abstract class ItemClass extends AbstractResource implements ItemClassInterface
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return $this->name;
     }
@@ -44,7 +44,7 @@ abstract class ItemClass extends AbstractResource implements ItemClassInterface
     /**
      * @return array
      */
-    public function subclasses() : array
+    public function subclasses(): array
     {
         return $this->subclasses;
     }

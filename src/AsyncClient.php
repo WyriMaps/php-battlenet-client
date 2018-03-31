@@ -5,6 +5,8 @@ namespace WyriMaps\BattleNet;
 use ApiClients\Foundation\Client;
 use ApiClients\Foundation\Factory;
 use React\EventLoop\LoopInterface;
+use React\Promise\PromiseInterface;
+use WyriMaps\BattleNet\CommandBus\Command\WhoAmICommand;
 use WyriMaps\BattleNet\WorldOfWarcraft\AsyncClient as WowClient;
 
 final class AsyncClient
@@ -15,9 +17,9 @@ final class AsyncClient
     private $client;
 
     /**
-     * @param string $apiKey
+     * @param string        $apiKey
      * @param LoopInterface $loop
-     * @param Client $client
+     * @param Client        $client
      */
     public function __construct(string $apiKey, LoopInterface $loop, Client $client = null)
     {
@@ -35,5 +37,12 @@ final class AsyncClient
     public function worldOfWarcraft(): WowClient
     {
         return new WowClient($this->client);
+    }
+
+    public function whoAmI(string $token): PromiseInterface
+    {
+        return $this->client->handle(
+            new WhoAmICommand($token)
+        );
     }
 }

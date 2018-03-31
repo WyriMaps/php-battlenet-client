@@ -9,7 +9,7 @@ abstract class EmptyMount implements MountInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyMount implements MountInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function spellId() : int
+    public function spellId(): int
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyMount implements MountInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function creatureId() : int
+    public function creatureId(): int
     {
         return null;
     }
@@ -33,7 +33,7 @@ abstract class EmptyMount implements MountInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function itemId() : int
+    public function itemId(): int
     {
         return null;
     }
@@ -41,7 +41,7 @@ abstract class EmptyMount implements MountInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function qualityId() : int
+    public function qualityId(): int
     {
         return null;
     }
@@ -49,7 +49,7 @@ abstract class EmptyMount implements MountInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function icon() : string
+    public function icon(): string
     {
         return null;
     }
@@ -57,7 +57,7 @@ abstract class EmptyMount implements MountInterface, EmptyResourceInterface
     /**
      * @return bool
      */
-    public function isGround() : bool
+    public function isGround(): bool
     {
         return null;
     }
@@ -65,7 +65,7 @@ abstract class EmptyMount implements MountInterface, EmptyResourceInterface
     /**
      * @return bool
      */
-    public function isFlying() : bool
+    public function isFlying(): bool
     {
         return null;
     }
@@ -73,7 +73,7 @@ abstract class EmptyMount implements MountInterface, EmptyResourceInterface
     /**
      * @return bool
      */
-    public function isAquatic() : bool
+    public function isAquatic(): bool
     {
         return null;
     }
@@ -81,7 +81,7 @@ abstract class EmptyMount implements MountInterface, EmptyResourceInterface
     /**
      * @return bool
      */
-    public function isJumping() : bool
+    public function isJumping(): bool
     {
         return null;
     }

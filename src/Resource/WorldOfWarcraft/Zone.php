@@ -111,7 +111,7 @@ abstract class Zone extends AbstractResource implements ZoneInterface
     /**
      * @return int
      */
-    public function id() : int
+    public function id(): int
     {
         return $this->id;
     }
@@ -119,7 +119,7 @@ abstract class Zone extends AbstractResource implements ZoneInterface
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return $this->name;
     }
@@ -127,7 +127,7 @@ abstract class Zone extends AbstractResource implements ZoneInterface
     /**
      * @return string
      */
-    public function urlSlug() : string
+    public function urlSlug(): string
     {
         return $this->urlSlug;
     }
@@ -135,7 +135,7 @@ abstract class Zone extends AbstractResource implements ZoneInterface
     /**
      * @return string
      */
-    public function description() : string
+    public function description(): string
     {
         return $this->description;
     }
@@ -143,7 +143,7 @@ abstract class Zone extends AbstractResource implements ZoneInterface
     /**
      * @return Zone\Location
      */
-    public function location() : Zone\Location
+    public function location(): Zone\Location
     {
         return $this->location;
     }
@@ -151,7 +151,7 @@ abstract class Zone extends AbstractResource implements ZoneInterface
     /**
      * @return int
      */
-    public function expansionId() : int
+    public function expansionId(): int
     {
         return $this->expansionId;
     }
@@ -159,7 +159,7 @@ abstract class Zone extends AbstractResource implements ZoneInterface
     /**
      * @return string
      */
-    public function numPlayers() : string
+    public function numPlayers(): string
     {
         return $this->numPlayers;
     }
@@ -167,7 +167,7 @@ abstract class Zone extends AbstractResource implements ZoneInterface
     /**
      * @return bool
      */
-    public function isDungeon() : bool
+    public function isDungeon(): bool
     {
         return $this->isDungeon;
     }
@@ -175,7 +175,7 @@ abstract class Zone extends AbstractResource implements ZoneInterface
     /**
      * @return bool
      */
-    public function isRaid() : bool
+    public function isRaid(): bool
     {
         return $this->isRaid;
     }
@@ -183,7 +183,7 @@ abstract class Zone extends AbstractResource implements ZoneInterface
     /**
      * @return int
      */
-    public function advisedMinLevel() : int
+    public function advisedMinLevel(): int
     {
         return $this->advisedMinLevel;
     }
@@ -191,7 +191,7 @@ abstract class Zone extends AbstractResource implements ZoneInterface
     /**
      * @return int
      */
-    public function advisedMaxLevel() : int
+    public function advisedMaxLevel(): int
     {
         return $this->advisedMaxLevel;
     }
@@ -199,7 +199,7 @@ abstract class Zone extends AbstractResource implements ZoneInterface
     /**
      * @return int
      */
-    public function advisedHeroicMinLevel() : int
+    public function advisedHeroicMinLevel(): int
     {
         return $this->advisedHeroicMinLevel;
     }
@@ -207,7 +207,7 @@ abstract class Zone extends AbstractResource implements ZoneInterface
     /**
      * @return int
      */
-    public function advisedHeroicMaxLevel() : int
+    public function advisedHeroicMaxLevel(): int
     {
         return $this->advisedHeroicMaxLevel;
     }
@@ -215,7 +215,7 @@ abstract class Zone extends AbstractResource implements ZoneInterface
     /**
      * @return array
      */
-    public function availableModes() : array
+    public function availableModes(): array
     {
         return $this->availableModes;
     }
@@ -223,7 +223,7 @@ abstract class Zone extends AbstractResource implements ZoneInterface
     /**
      * @return int
      */
-    public function lfgNormalMinGearLevel() : int
+    public function lfgNormalMinGearLevel(): int
     {
         return $this->lfgNormalMinGearLevel;
     }
@@ -231,7 +231,7 @@ abstract class Zone extends AbstractResource implements ZoneInterface
     /**
      * @return int
      */
-    public function lfgHeroicMinGearLevel() : int
+    public function lfgHeroicMinGearLevel(): int
     {
         return $this->lfgHeroicMinGearLevel;
     }
@@ -239,7 +239,7 @@ abstract class Zone extends AbstractResource implements ZoneInterface
     /**
      * @return int
      */
-    public function floors() : int
+    public function floors(): int
     {
         return $this->floors;
     }
@@ -247,7 +247,7 @@ abstract class Zone extends AbstractResource implements ZoneInterface
     /**
      * @return array
      */
-    public function bosses() : array
+    public function bosses(): array
     {
         return $this->bosses;
     }

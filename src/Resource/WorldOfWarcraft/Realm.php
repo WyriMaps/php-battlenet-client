@@ -58,7 +58,7 @@ abstract class Realm extends AbstractResource implements RealmInterface
     /**
      * @return string
      */
-    public function type() : string
+    public function type(): string
     {
         return $this->type;
     }
@@ -66,7 +66,7 @@ abstract class Realm extends AbstractResource implements RealmInterface
     /**
      * @return string
      */
-    public function population() : string
+    public function population(): string
     {
         return $this->population;
     }
@@ -74,7 +74,7 @@ abstract class Realm extends AbstractResource implements RealmInterface
     /**
      * @return bool
      */
-    public function queue() : bool
+    public function queue(): bool
     {
         return $this->queue;
     }
@@ -82,7 +82,7 @@ abstract class Realm extends AbstractResource implements RealmInterface
     /**
      * @return bool
      */
-    public function status() : bool
+    public function status(): bool
     {
         return $this->status;
     }
@@ -90,7 +90,7 @@ abstract class Realm extends AbstractResource implements RealmInterface
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return $this->name;
     }
@@ -98,7 +98,7 @@ abstract class Realm extends AbstractResource implements RealmInterface
     /**
      * @return string
      */
-    public function battlegroup() : string
+    public function battlegroup(): string
     {
         return $this->battlegroup;
     }
@@ -106,7 +106,7 @@ abstract class Realm extends AbstractResource implements RealmInterface
     /**
      * @return string
      */
-    public function locale() : string
+    public function locale(): string
     {
         return $this->locale;
     }
@@ -114,7 +114,7 @@ abstract class Realm extends AbstractResource implements RealmInterface
     /**
      * @return string
      */
-    public function timezone() : string
+    public function timezone(): string
     {
         return $this->timezone;
     }
@@ -122,7 +122,7 @@ abstract class Realm extends AbstractResource implements RealmInterface
     /**
      * @return array
      */
-    public function connectedRealms() : array
+    public function connectedRealms(): array
     {
         return $this->connected_realms;
     }

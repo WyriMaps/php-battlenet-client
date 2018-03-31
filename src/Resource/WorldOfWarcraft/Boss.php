@@ -82,7 +82,7 @@ abstract class Boss extends AbstractResource implements BossInterface
     /**
      * @return int
      */
-    public function id() : int
+    public function id(): int
     {
         return $this->id;
     }
@@ -90,7 +90,7 @@ abstract class Boss extends AbstractResource implements BossInterface
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return $this->name;
     }
@@ -98,7 +98,7 @@ abstract class Boss extends AbstractResource implements BossInterface
     /**
      * @return string
      */
-    public function urlSlug() : string
+    public function urlSlug(): string
     {
         return $this->urlSlug;
     }
@@ -106,7 +106,7 @@ abstract class Boss extends AbstractResource implements BossInterface
     /**
      * @return string
      */
-    public function description() : string
+    public function description(): string
     {
         return $this->description;
     }
@@ -114,7 +114,7 @@ abstract class Boss extends AbstractResource implements BossInterface
     /**
      * @return int
      */
-    public function zoneId() : int
+    public function zoneId(): int
     {
         return $this->zoneId;
     }
@@ -122,7 +122,7 @@ abstract class Boss extends AbstractResource implements BossInterface
     /**
      * @return bool
      */
-    public function availableInNormalMode() : bool
+    public function availableInNormalMode(): bool
     {
         return $this->availableInNormalMode;
     }
@@ -130,7 +130,7 @@ abstract class Boss extends AbstractResource implements BossInterface
     /**
      * @return bool
      */
-    public function availableInHeroicMode() : bool
+    public function availableInHeroicMode(): bool
     {
         return $this->availableInHeroicMode;
     }
@@ -138,7 +138,7 @@ abstract class Boss extends AbstractResource implements BossInterface
     /**
      * @return int
      */
-    public function heatlh() : int
+    public function heatlh(): int
     {
         return $this->heatlh;
     }
@@ -146,7 +146,7 @@ abstract class Boss extends AbstractResource implements BossInterface
     /**
      * @return int
      */
-    public function heroicHeatlh() : int
+    public function heroicHeatlh(): int
     {
         return $this->heroicHeatlh;
     }
@@ -154,7 +154,7 @@ abstract class Boss extends AbstractResource implements BossInterface
     /**
      * @return int
      */
-    public function level() : int
+    public function level(): int
     {
         return $this->level;
     }
@@ -162,7 +162,7 @@ abstract class Boss extends AbstractResource implements BossInterface
     /**
      * @return int
      */
-    public function heroicLevel() : int
+    public function heroicLevel(): int
     {
         return $this->heroicLevel;
     }
@@ -170,7 +170,7 @@ abstract class Boss extends AbstractResource implements BossInterface
     /**
      * @return int
      */
-    public function journalId() : int
+    public function journalId(): int
     {
         return $this->journalId;
     }
@@ -178,7 +178,7 @@ abstract class Boss extends AbstractResource implements BossInterface
     /**
      * @return Npc
      */
-    public function npcs() : Npc
+    public function npcs(): Npc
     {
         return $this->npcs;
     }

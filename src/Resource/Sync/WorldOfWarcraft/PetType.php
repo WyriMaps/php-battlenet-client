@@ -6,7 +6,7 @@ use WyriMaps\BattleNet\Resource\WorldOfWarcraft\PetType as BasePetType;
 
 class PetType extends BasePetType
 {
-    public function refresh() : PetType
+    public function refresh(): PetType
     {
         return $this->wait($this->callAsync('refresh'));
     }

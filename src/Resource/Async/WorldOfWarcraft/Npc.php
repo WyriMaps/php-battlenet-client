@@ -6,7 +6,7 @@ use WyriMaps\BattleNet\Resource\WorldOfWarcraft\Npc as BaseNpc;
 
 class Npc extends BaseNpc
 {
-    public function refresh() : Npc
+    public function refresh(): Npc
     {
         return $this->wait($this->callAsync('refresh'));
     }

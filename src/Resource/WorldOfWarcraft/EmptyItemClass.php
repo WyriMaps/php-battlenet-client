@@ -9,7 +9,7 @@ abstract class EmptyItemClass implements ItemClassInterface, EmptyResourceInterf
     /**
      * @return int
      */
-    public function class() : int
+    public function class(): int
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyItemClass implements ItemClassInterface, EmptyResourceInterf
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyItemClass implements ItemClassInterface, EmptyResourceInterf
     /**
      * @return array
      */
-    public function subclasses() : array
+    public function subclasses(): array
     {
         return null;
     }

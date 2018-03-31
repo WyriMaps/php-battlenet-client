@@ -9,7 +9,7 @@ abstract class EmptyPetType implements PetTypeInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function id() : int
+    public function id(): int
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyPetType implements PetTypeInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function key() : string
+    public function key(): string
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyPetType implements PetTypeInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return null;
     }
@@ -33,7 +33,7 @@ abstract class EmptyPetType implements PetTypeInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function typeAbilityId() : int
+    public function typeAbilityId(): int
     {
         return null;
     }
@@ -41,7 +41,7 @@ abstract class EmptyPetType implements PetTypeInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function strongAgainstId() : int
+    public function strongAgainstId(): int
     {
         return null;
     }
@@ -49,7 +49,7 @@ abstract class EmptyPetType implements PetTypeInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function weakAgainstId() : int
+    public function weakAgainstId(): int
     {
         return null;
     }

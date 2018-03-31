@@ -28,7 +28,7 @@ abstract class GuildAchievementCategory extends AbstractResource implements Guil
     /**
      * @return int
      */
-    public function id() : int
+    public function id(): int
     {
         return $this->id;
     }
@@ -36,7 +36,7 @@ abstract class GuildAchievementCategory extends AbstractResource implements Guil
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return $this->name;
     }
@@ -44,7 +44,7 @@ abstract class GuildAchievementCategory extends AbstractResource implements Guil
     /**
      * @return array
      */
-    public function achievements() : array
+    public function achievements(): array
     {
         return $this->achievements;
     }

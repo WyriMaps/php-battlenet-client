@@ -9,7 +9,7 @@ abstract class EmptyZone implements ZoneInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function id() : int
+    public function id(): int
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyZone implements ZoneInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyZone implements ZoneInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function urlSlug() : string
+    public function urlSlug(): string
     {
         return null;
     }
@@ -33,7 +33,7 @@ abstract class EmptyZone implements ZoneInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function description() : string
+    public function description(): string
     {
         return null;
     }
@@ -41,7 +41,7 @@ abstract class EmptyZone implements ZoneInterface, EmptyResourceInterface
     /**
      * @return Zone\Location
      */
-    public function location() : Zone\Location
+    public function location(): Zone\Location
     {
         return null;
     }
@@ -49,7 +49,7 @@ abstract class EmptyZone implements ZoneInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function expansionId() : int
+    public function expansionId(): int
     {
         return null;
     }
@@ -57,7 +57,7 @@ abstract class EmptyZone implements ZoneInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function numPlayers() : string
+    public function numPlayers(): string
     {
         return null;
     }
@@ -65,7 +65,7 @@ abstract class EmptyZone implements ZoneInterface, EmptyResourceInterface
     /**
      * @return bool
      */
-    public function isDungeon() : bool
+    public function isDungeon(): bool
     {
         return null;
     }
@@ -73,7 +73,7 @@ abstract class EmptyZone implements ZoneInterface, EmptyResourceInterface
     /**
      * @return bool
      */
-    public function isRaid() : bool
+    public function isRaid(): bool
     {
         return null;
     }
@@ -81,7 +81,7 @@ abstract class EmptyZone implements ZoneInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function advisedMinLevel() : int
+    public function advisedMinLevel(): int
     {
         return null;
     }
@@ -89,7 +89,7 @@ abstract class EmptyZone implements ZoneInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function advisedMaxLevel() : int
+    public function advisedMaxLevel(): int
     {
         return null;
     }
@@ -97,7 +97,7 @@ abstract class EmptyZone implements ZoneInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function advisedHeroicMinLevel() : int
+    public function advisedHeroicMinLevel(): int
     {
         return null;
     }
@@ -105,7 +105,7 @@ abstract class EmptyZone implements ZoneInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function advisedHeroicMaxLevel() : int
+    public function advisedHeroicMaxLevel(): int
     {
         return null;
     }
@@ -113,7 +113,7 @@ abstract class EmptyZone implements ZoneInterface, EmptyResourceInterface
     /**
      * @return array
      */
-    public function availableModes() : array
+    public function availableModes(): array
     {
         return null;
     }
@@ -121,7 +121,7 @@ abstract class EmptyZone implements ZoneInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function lfgNormalMinGearLevel() : int
+    public function lfgNormalMinGearLevel(): int
     {
         return null;
     }
@@ -129,7 +129,7 @@ abstract class EmptyZone implements ZoneInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function lfgHeroicMinGearLevel() : int
+    public function lfgHeroicMinGearLevel(): int
     {
         return null;
     }
@@ -137,7 +137,7 @@ abstract class EmptyZone implements ZoneInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function floors() : int
+    public function floors(): int
     {
         return null;
     }
@@ -145,7 +145,7 @@ abstract class EmptyZone implements ZoneInterface, EmptyResourceInterface
     /**
      * @return array
      */
-    public function bosses() : array
+    public function bosses(): array
     {
         return null;
     }

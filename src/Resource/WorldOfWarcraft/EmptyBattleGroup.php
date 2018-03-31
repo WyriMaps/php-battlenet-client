@@ -9,7 +9,7 @@ abstract class EmptyBattleGroup implements BattleGroupInterface, EmptyResourceIn
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyBattleGroup implements BattleGroupInterface, EmptyResourceIn
     /**
      * @return string
      */
-    public function slug() : string
+    public function slug(): string
     {
         return null;
     }

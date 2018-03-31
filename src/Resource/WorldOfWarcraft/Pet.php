@@ -63,7 +63,7 @@ abstract class Pet extends AbstractResource implements PetInterface
     /**
      * @return bool
      */
-    public function canBattle() : bool
+    public function canBattle(): bool
     {
         return $this->canBattle;
     }
@@ -71,7 +71,7 @@ abstract class Pet extends AbstractResource implements PetInterface
     /**
      * @return int
      */
-    public function creatureId() : int
+    public function creatureId(): int
     {
         return $this->creatureId;
     }
@@ -79,7 +79,7 @@ abstract class Pet extends AbstractResource implements PetInterface
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return $this->name;
     }
@@ -87,7 +87,7 @@ abstract class Pet extends AbstractResource implements PetInterface
     /**
      * @return string
      */
-    public function family() : string
+    public function family(): string
     {
         return $this->family;
     }
@@ -95,7 +95,7 @@ abstract class Pet extends AbstractResource implements PetInterface
     /**
      * @return string
      */
-    public function icon() : string
+    public function icon(): string
     {
         return $this->icon;
     }
@@ -103,7 +103,7 @@ abstract class Pet extends AbstractResource implements PetInterface
     /**
      * @return int
      */
-    public function qualityId() : int
+    public function qualityId(): int
     {
         return $this->qualityId;
     }
@@ -111,7 +111,7 @@ abstract class Pet extends AbstractResource implements PetInterface
     /**
      * @return array
      */
-    public function stats() : array
+    public function stats(): array
     {
         return $this->stats;
     }
@@ -119,7 +119,7 @@ abstract class Pet extends AbstractResource implements PetInterface
     /**
      * @return array
      */
-    public function strongAgainst() : array
+    public function strongAgainst(): array
     {
         return $this->strongAgainst;
     }
@@ -127,7 +127,7 @@ abstract class Pet extends AbstractResource implements PetInterface
     /**
      * @return int
      */
-    public function typeId() : int
+    public function typeId(): int
     {
         return $this->typeId;
     }
@@ -135,7 +135,7 @@ abstract class Pet extends AbstractResource implements PetInterface
     /**
      * @return array
      */
-    public function weakAgainst() : array
+    public function weakAgainst(): array
     {
         return $this->weakAgainst;
     }

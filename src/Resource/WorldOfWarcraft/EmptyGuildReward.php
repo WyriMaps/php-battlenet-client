@@ -9,7 +9,7 @@ abstract class EmptyGuildReward implements GuildRewardInterface, EmptyResourceIn
     /**
      * @return int
      */
-    public function minGuildLevel() : int
+    public function minGuildLevel(): int
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyGuildReward implements GuildRewardInterface, EmptyResourceIn
     /**
      * @return int
      */
-    public function minGuildRepLevel() : int
+    public function minGuildRepLevel(): int
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyGuildReward implements GuildRewardInterface, EmptyResourceIn
     /**
      * @return array
      */
-    public function achievement() : array
+    public function achievement(): array
     {
         return null;
     }
@@ -33,7 +33,7 @@ abstract class EmptyGuildReward implements GuildRewardInterface, EmptyResourceIn
     /**
      * @return array
      */
-    public function item() : array
+    public function item(): array
     {
         return null;
     }

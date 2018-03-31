@@ -29,7 +29,7 @@ class AsyncClient
     }
 
     /**
-     * List all battle groups
+     * List all battle groups.
      *
      * @return ObservableInterface
      */
@@ -41,7 +41,7 @@ class AsyncClient
     }
 
     /**
-     * List all mounts
+     * List all mounts.
      *
      * @return ObservableInterface
      */
@@ -53,7 +53,7 @@ class AsyncClient
     }
 
     /**
-     * List all realms
+     * List all realms.
      *
      * @return ObservableInterface
      */
@@ -65,7 +65,7 @@ class AsyncClient
     }
 
     /**
-     * List all pets
+     * List all pets.
      *
      * @return ObservableInterface
      */
@@ -77,7 +77,7 @@ class AsyncClient
     }
 
     /**
-     * List all pet types
+     * List all pet types.
      *
      * @return ObservableInterface
      */
@@ -89,7 +89,7 @@ class AsyncClient
     }
 
     /**
-     * List all zones
+     * List all zones.
      *
      * @return ObservableInterface
      */

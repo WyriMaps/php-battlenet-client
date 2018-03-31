@@ -11,30 +11,30 @@ interface PetTypeInterface extends ResourceInterface
     /**
      * @return int
      */
-    public function id() : int;
+    public function id(): int;
 
     /**
      * @return string
      */
-    public function key() : string;
+    public function key(): string;
 
     /**
      * @return string
      */
-    public function name() : string;
+    public function name(): string;
 
     /**
      * @return int
      */
-    public function typeAbilityId() : int;
+    public function typeAbilityId(): int;
 
     /**
      * @return int
      */
-    public function strongAgainstId() : int;
+    public function strongAgainstId(): int;
 
     /**
      * @return int
      */
-    public function weakAgainstId() : int;
+    public function weakAgainstId(): int;
 }

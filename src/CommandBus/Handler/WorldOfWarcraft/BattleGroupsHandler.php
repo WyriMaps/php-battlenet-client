@@ -4,9 +4,9 @@ namespace WyriMaps\BattleNet\CommandBus\Handler\WorldOfWarcraft;
 
 use ApiClients\Tools\Services\Client\FetchAndIterateService;
 use React\Promise\PromiseInterface;
-use function React\Promise\resolve;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\BattleGroupsCommand;
 use WyriMaps\BattleNet\Resource\WorldOfWarcraft\BattleGroupInterface;
+use function React\Promise\resolve;
 
 final class BattleGroupsHandler
 {
@@ -24,9 +24,9 @@ final class BattleGroupsHandler
     }
 
     /**
-     * Fetch the given repository and hydrate it
+     * Fetch the given repository and hydrate it.
      *
-     * @param BattleGroupsCommand $command
+     * @param  BattleGroupsCommand $command
      * @return PromiseInterface
      */
     public function handle(BattleGroupsCommand $command): PromiseInterface

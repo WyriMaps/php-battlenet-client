@@ -53,7 +53,7 @@ abstract class Spell extends AbstractResource implements SpellInterface
     /**
      * @return int
      */
-    public function id() : int
+    public function id(): int
     {
         return $this->id;
     }
@@ -61,7 +61,7 @@ abstract class Spell extends AbstractResource implements SpellInterface
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return $this->name;
     }
@@ -69,7 +69,7 @@ abstract class Spell extends AbstractResource implements SpellInterface
     /**
      * @return string
      */
-    public function icon() : string
+    public function icon(): string
     {
         return $this->icon;
     }
@@ -77,7 +77,7 @@ abstract class Spell extends AbstractResource implements SpellInterface
     /**
      * @return string
      */
-    public function description() : string
+    public function description(): string
     {
         return $this->description;
     }
@@ -85,7 +85,7 @@ abstract class Spell extends AbstractResource implements SpellInterface
     /**
      * @return string
      */
-    public function range() : string
+    public function range(): string
     {
         return $this->range;
     }
@@ -93,7 +93,7 @@ abstract class Spell extends AbstractResource implements SpellInterface
     /**
      * @return string
      */
-    public function powerCost() : string
+    public function powerCost(): string
     {
         return $this->powerCost;
     }
@@ -101,7 +101,7 @@ abstract class Spell extends AbstractResource implements SpellInterface
     /**
      * @return string
      */
-    public function castTime() : string
+    public function castTime(): string
     {
         return $this->castTime;
     }
@@ -109,7 +109,7 @@ abstract class Spell extends AbstractResource implements SpellInterface
     /**
      * @return string
      */
-    public function cooldown() : string
+    public function cooldown(): string
     {
         return $this->cooldown;
     }

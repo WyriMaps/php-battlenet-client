@@ -8,16 +8,18 @@ use WyriMaps\BattleNet\Resource\WorldOfWarcraft\Npc;
 
 class NpcTest extends AbstractResourceTest
 {
-    public function getSyncAsync() : string
+    public function getSyncAsync(): string
     {
         return 'Sync';
     }
-    public function getClass() : string
+
+    public function getClass(): string
     {
         return Npc::class;
     }
-    public function getNamespace() : string
+
+    public function getNamespace(): string
     {
-        return Apisettings::NAMESPACE;
+        return ApiSettings::NAMESPACE;
     }
 }

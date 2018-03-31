@@ -9,7 +9,7 @@ abstract class EmptyLocation implements LocationInterface, EmptyResourceInterfac
     /**
      * @return int
      */
-    public function id() : int
+    public function id(): int
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyLocation implements LocationInterface, EmptyResourceInterfac
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return null;
     }

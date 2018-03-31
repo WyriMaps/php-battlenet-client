@@ -11,20 +11,20 @@ interface RecipeInterface extends ResourceInterface
     /**
      * @return int
      */
-    public function id() : int;
+    public function id(): int;
 
     /**
      * @return string
      */
-    public function name() : string;
+    public function name(): string;
 
     /**
      * @return string
      */
-    public function profession() : string;
+    public function profession(): string;
 
     /**
      * @return string
      */
-    public function icon() : string;
+    public function icon(): string;
 }

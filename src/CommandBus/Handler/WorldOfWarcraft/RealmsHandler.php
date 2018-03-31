@@ -4,12 +4,9 @@ namespace WyriMaps\BattleNet\CommandBus\Handler\WorldOfWarcraft;
 
 use ApiClients\Tools\Services\Client\FetchAndIterateService;
 use React\Promise\PromiseInterface;
-use Rx\Observable;
-use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\PetsCommand;
-use function React\Promise\resolve;
-use function WyriHaximus\React\futureFunctionPromise;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\RealmsCommand;
 use WyriMaps\BattleNet\Resource\WorldOfWarcraft\RealmInterface;
+use function React\Promise\resolve;
 
 final class RealmsHandler
 {
@@ -27,9 +24,9 @@ final class RealmsHandler
     }
 
     /**
-     * Fetch the given repository and hydrate it
+     * Fetch the given repository and hydrate it.
      *
-     * @param RealmsCommand $command
+     * @param  RealmsCommand    $command
      * @return PromiseInterface
      */
     public function handle(RealmsCommand $command): PromiseInterface

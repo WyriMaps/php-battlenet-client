@@ -8,16 +8,18 @@ use WyriMaps\BattleNet\Resource\WorldOfWarcraft\Boss;
 
 class BossTest extends AbstractResourceTest
 {
-    public function getSyncAsync() : string
+    public function getSyncAsync(): string
     {
         return 'Async';
     }
-    public function getClass() : string
+
+    public function getClass(): string
     {
         return Boss::class;
     }
-    public function getNamespace() : string
+
+    public function getNamespace(): string
     {
-        return Apisettings::NAMESPACE;
+        return ApiSettings::NAMESPACE;
     }
 }

@@ -4,13 +4,9 @@ namespace WyriMaps\BattleNet\CommandBus\Handler\WorldOfWarcraft;
 
 use ApiClients\Tools\Services\Client\FetchAndIterateService;
 use React\Promise\PromiseInterface;
-use Rx\Observable;
-use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\PetsCommand;
-use function React\Promise\resolve;
-use function WyriHaximus\React\futureFunctionPromise;
-use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\RealmsCommand;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\ZonesCommand;
 use WyriMaps\BattleNet\Resource\WorldOfWarcraft\ZoneInterface;
+use function React\Promise\resolve;
 
 final class ZonesHandler
 {
@@ -28,9 +24,9 @@ final class ZonesHandler
     }
 
     /**
-     * Fetch the given repository and hydrate it
+     * Fetch the given repository and hydrate it.
      *
-     * @param ZonesCommand $command
+     * @param  ZonesCommand     $command
      * @return PromiseInterface
      */
     public function handle(ZonesCommand $command): PromiseInterface

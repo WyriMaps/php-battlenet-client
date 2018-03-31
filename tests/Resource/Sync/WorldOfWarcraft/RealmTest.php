@@ -8,16 +8,18 @@ use WyriMaps\BattleNet\Resource\WorldOfWarcraft\Realm;
 
 class RealmTest extends AbstractResourceTest
 {
-    public function getSyncAsync() : string
+    public function getSyncAsync(): string
     {
         return 'Sync';
     }
-    public function getClass() : string
+
+    public function getClass(): string
     {
         return Realm::class;
     }
-    public function getNamespace() : string
+
+    public function getNamespace(): string
     {
-        return Apisettings::NAMESPACE;
+        return ApiSettings::NAMESPACE;
     }
 }

@@ -33,7 +33,7 @@ abstract class Race extends AbstractResource implements RaceInterface
     /**
      * @return int
      */
-    public function id() : int
+    public function id(): int
     {
         return $this->id;
     }
@@ -41,7 +41,7 @@ abstract class Race extends AbstractResource implements RaceInterface
     /**
      * @return int
      */
-    public function mask() : int
+    public function mask(): int
     {
         return $this->mask;
     }
@@ -49,7 +49,7 @@ abstract class Race extends AbstractResource implements RaceInterface
     /**
      * @return string
      */
-    public function side() : string
+    public function side(): string
     {
         return $this->side;
     }
@@ -57,7 +57,7 @@ abstract class Race extends AbstractResource implements RaceInterface
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return $this->name;
     }

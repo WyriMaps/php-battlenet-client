@@ -9,7 +9,7 @@ abstract class EmptyQuest implements QuestInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function id() : int
+    public function id(): int
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyQuest implements QuestInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function title() : string
+    public function title(): string
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyQuest implements QuestInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function reqLevel() : int
+    public function reqLevel(): int
     {
         return null;
     }
@@ -33,7 +33,7 @@ abstract class EmptyQuest implements QuestInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function suggestedPartyMembers() : int
+    public function suggestedPartyMembers(): int
     {
         return null;
     }
@@ -41,7 +41,7 @@ abstract class EmptyQuest implements QuestInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function category() : string
+    public function category(): string
     {
         return null;
     }
@@ -49,7 +49,7 @@ abstract class EmptyQuest implements QuestInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function level() : int
+    public function level(): int
     {
         return null;
     }

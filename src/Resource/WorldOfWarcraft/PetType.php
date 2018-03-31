@@ -43,7 +43,7 @@ abstract class PetType extends AbstractResource implements PetTypeInterface
     /**
      * @return int
      */
-    public function id() : int
+    public function id(): int
     {
         return $this->id;
     }
@@ -51,7 +51,7 @@ abstract class PetType extends AbstractResource implements PetTypeInterface
     /**
      * @return string
      */
-    public function key() : string
+    public function key(): string
     {
         return $this->key;
     }
@@ -59,7 +59,7 @@ abstract class PetType extends AbstractResource implements PetTypeInterface
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return $this->name;
     }
@@ -67,7 +67,7 @@ abstract class PetType extends AbstractResource implements PetTypeInterface
     /**
      * @return int
      */
-    public function typeAbilityId() : int
+    public function typeAbilityId(): int
     {
         return $this->typeAbilityId;
     }
@@ -75,7 +75,7 @@ abstract class PetType extends AbstractResource implements PetTypeInterface
     /**
      * @return int
      */
-    public function strongAgainstId() : int
+    public function strongAgainstId(): int
     {
         return $this->strongAgainstId;
     }
@@ -83,7 +83,7 @@ abstract class PetType extends AbstractResource implements PetTypeInterface
     /**
      * @return int
      */
-    public function weakAgainstId() : int
+    public function weakAgainstId(): int
     {
         return $this->weakAgainstId;
     }

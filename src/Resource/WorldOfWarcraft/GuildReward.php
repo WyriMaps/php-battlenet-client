@@ -33,7 +33,7 @@ abstract class GuildReward extends AbstractResource implements GuildRewardInterf
     /**
      * @return int
      */
-    public function minGuildLevel() : int
+    public function minGuildLevel(): int
     {
         return $this->minGuildLevel;
     }
@@ -41,7 +41,7 @@ abstract class GuildReward extends AbstractResource implements GuildRewardInterf
     /**
      * @return int
      */
-    public function minGuildRepLevel() : int
+    public function minGuildRepLevel(): int
     {
         return $this->minGuildRepLevel;
     }
@@ -49,7 +49,7 @@ abstract class GuildReward extends AbstractResource implements GuildRewardInterf
     /**
      * @return array
      */
-    public function achievement() : array
+    public function achievement(): array
     {
         return $this->achievement;
     }
@@ -57,7 +57,7 @@ abstract class GuildReward extends AbstractResource implements GuildRewardInterf
     /**
      * @return array
      */
-    public function item() : array
+    public function item(): array
     {
         return $this->item;
     }

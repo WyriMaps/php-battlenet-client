@@ -6,7 +6,7 @@ use WyriMaps\BattleNet\Resource\StarCraft2\ProtossDecal as BaseProtossDecal;
 
 class ProtossDecal extends BaseProtossDecal
 {
-    public function refresh() : ProtossDecal
+    public function refresh(): ProtossDecal
     {
         return $this->wait($this->callAsync('refresh'));
     }

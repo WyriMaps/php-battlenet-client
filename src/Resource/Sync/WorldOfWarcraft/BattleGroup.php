@@ -6,7 +6,7 @@ use WyriMaps\BattleNet\Resource\WorldOfWarcraft\BattleGroup as BaseBattleGroup;
 
 class BattleGroup extends BaseBattleGroup
 {
-    public function refresh() : BattleGroup
+    public function refresh(): BattleGroup
     {
         return $this->wait($this->callAsync('refresh'));
     }

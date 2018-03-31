@@ -9,7 +9,7 @@ abstract class EmptyRecipe implements RecipeInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function id() : int
+    public function id(): int
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyRecipe implements RecipeInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyRecipe implements RecipeInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function profession() : string
+    public function profession(): string
     {
         return null;
     }
@@ -33,7 +33,7 @@ abstract class EmptyRecipe implements RecipeInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function icon() : string
+    public function icon(): string
     {
         return null;
     }

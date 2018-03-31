@@ -23,7 +23,7 @@ abstract class BattleGroup extends AbstractResource implements BattleGroupInterf
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return $this->name;
     }
@@ -31,7 +31,7 @@ abstract class BattleGroup extends AbstractResource implements BattleGroupInterf
     /**
      * @return string
      */
-    public function slug() : string
+    public function slug(): string
     {
         return $this->slug;
     }

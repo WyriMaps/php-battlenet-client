@@ -6,7 +6,7 @@ use WyriMaps\BattleNet\Resource\WorldOfWarcraft\Race as BaseRace;
 
 class Race extends BaseRace
 {
-    public function refresh() : Race
+    public function refresh(): Race
     {
         return $this->wait($this->callAsync('refresh'));
     }

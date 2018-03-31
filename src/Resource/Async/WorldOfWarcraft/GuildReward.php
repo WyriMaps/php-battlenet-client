@@ -6,7 +6,7 @@ use WyriMaps\BattleNet\Resource\WorldOfWarcraft\GuildReward as BaseGuildReward;
 
 class GuildReward extends BaseGuildReward
 {
-    public function refresh() : GuildReward
+    public function refresh(): GuildReward
     {
         return $this->wait($this->callAsync('refresh'));
     }

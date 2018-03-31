@@ -11,20 +11,20 @@ interface CharacterClassInterface extends ResourceInterface
     /**
      * @return int
      */
-    public function id() : int;
+    public function id(): int;
 
     /**
      * @return int
      */
-    public function mask() : int;
+    public function mask(): int;
 
     /**
      * @return string
      */
-    public function powerType() : string;
+    public function powerType(): string;
 
     /**
      * @return string
      */
-    public function name() : string;
+    public function name(): string;
 }

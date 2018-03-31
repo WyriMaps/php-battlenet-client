@@ -6,7 +6,7 @@ use WyriMaps\BattleNet\Resource\WorldOfWarcraft\Item as BaseItem;
 
 class Item extends BaseItem
 {
-    public function refresh() : Item
+    public function refresh(): Item
     {
         return $this->wait($this->callAsync('refresh'));
     }

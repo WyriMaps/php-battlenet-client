@@ -11,45 +11,45 @@ interface GuildAchievementInterface extends ResourceInterface
     /**
      * @return int
      */
-    public function id() : int;
+    public function id(): int;
 
     /**
      * @return string
      */
-    public function title() : string;
+    public function title(): string;
 
     /**
      * @return int
      */
-    public function points() : int;
+    public function points(): int;
 
     /**
      * @return string
      */
-    public function description() : string;
+    public function description(): string;
 
     /**
      * @return array
      */
-    public function rewardItems() : array;
+    public function rewardItems(): array;
 
     /**
      * @return string
      */
-    public function icon() : string;
+    public function icon(): string;
 
     /**
      * @return array
      */
-    public function criteria() : array;
+    public function criteria(): array;
 
     /**
      * @return bool
      */
-    public function accountWide() : bool;
+    public function accountWide(): bool;
 
     /**
      * @return int
      */
-    public function factionId() : int;
+    public function factionId(): int;
 }

@@ -9,7 +9,7 @@ abstract class EmptyPet implements PetInterface, EmptyResourceInterface
     /**
      * @return bool
      */
-    public function canBattle() : bool
+    public function canBattle(): bool
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyPet implements PetInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function creatureId() : int
+    public function creatureId(): int
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyPet implements PetInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return null;
     }
@@ -33,7 +33,7 @@ abstract class EmptyPet implements PetInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function family() : string
+    public function family(): string
     {
         return null;
     }
@@ -41,7 +41,7 @@ abstract class EmptyPet implements PetInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function icon() : string
+    public function icon(): string
     {
         return null;
     }
@@ -49,7 +49,7 @@ abstract class EmptyPet implements PetInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function qualityId() : int
+    public function qualityId(): int
     {
         return null;
     }
@@ -57,7 +57,7 @@ abstract class EmptyPet implements PetInterface, EmptyResourceInterface
     /**
      * @return array
      */
-    public function stats() : array
+    public function stats(): array
     {
         return null;
     }
@@ -65,7 +65,7 @@ abstract class EmptyPet implements PetInterface, EmptyResourceInterface
     /**
      * @return array
      */
-    public function strongAgainst() : array
+    public function strongAgainst(): array
     {
         return null;
     }
@@ -73,7 +73,7 @@ abstract class EmptyPet implements PetInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function typeId() : int
+    public function typeId(): int
     {
         return null;
     }
@@ -81,7 +81,7 @@ abstract class EmptyPet implements PetInterface, EmptyResourceInterface
     /**
      * @return array
      */
-    public function weakAgainst() : array
+    public function weakAgainst(): array
     {
         return null;
     }

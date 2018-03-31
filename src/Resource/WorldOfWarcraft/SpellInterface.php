@@ -11,40 +11,40 @@ interface SpellInterface extends ResourceInterface
     /**
      * @return int
      */
-    public function id() : int;
+    public function id(): int;
 
     /**
      * @return string
      */
-    public function name() : string;
+    public function name(): string;
 
     /**
      * @return string
      */
-    public function icon() : string;
+    public function icon(): string;
 
     /**
      * @return string
      */
-    public function description() : string;
+    public function description(): string;
 
     /**
      * @return string
      */
-    public function range() : string;
+    public function range(): string;
 
     /**
      * @return string
      */
-    public function powerCost() : string;
+    public function powerCost(): string;
 
     /**
      * @return string
      */
-    public function castTime() : string;
+    public function castTime(): string;
 
     /**
      * @return string
      */
-    public function cooldown() : string;
+    public function cooldown(): string;
 }

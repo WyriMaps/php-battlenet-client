@@ -6,7 +6,7 @@ use WyriMaps\BattleNet\Resource\WorldOfWarcraft\Spell as BaseSpell;
 
 class Spell extends BaseSpell
 {
-    public function refresh() : Spell
+    public function refresh(): Spell
     {
         return $this->wait($this->callAsync('refresh'));
     }

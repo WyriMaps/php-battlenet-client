@@ -6,7 +6,7 @@ use WyriMaps\BattleNet\Resource\WorldOfWarcraft\GuildAchievement as BaseGuildAch
 
 class GuildAchievement extends BaseGuildAchievement
 {
-    public function refresh() : GuildAchievement
+    public function refresh(): GuildAchievement
     {
         return $this->wait($this->callAsync('refresh'));
     }

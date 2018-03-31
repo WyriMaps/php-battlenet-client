@@ -11,15 +11,15 @@ interface ItemClassInterface extends ResourceInterface
     /**
      * @return int
      */
-    public function class() : int;
+    public function class(): int;
 
     /**
      * @return string
      */
-    public function name() : string;
+    public function name(): string;
 
     /**
      * @return array
      */
-    public function subclasses() : array;
+    public function subclasses(): array;
 }

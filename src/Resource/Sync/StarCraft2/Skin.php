@@ -6,7 +6,7 @@ use WyriMaps\BattleNet\Resource\StarCraft2\Skin as BaseSkin;
 
 class Skin extends BaseSkin
 {
-    public function refresh() : Skin
+    public function refresh(): Skin
     {
         return $this->wait($this->callAsync('refresh'));
     }

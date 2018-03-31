@@ -11,30 +11,30 @@ interface QuestInterface extends ResourceInterface
     /**
      * @return int
      */
-    public function id() : int;
+    public function id(): int;
 
     /**
      * @return string
      */
-    public function title() : string;
+    public function title(): string;
 
     /**
      * @return int
      */
-    public function reqLevel() : int;
+    public function reqLevel(): int;
 
     /**
      * @return int
      */
-    public function suggestedPartyMembers() : int;
+    public function suggestedPartyMembers(): int;
 
     /**
      * @return string
      */
-    public function category() : string;
+    public function category(): string;
 
     /**
      * @return int
      */
-    public function level() : int;
+    public function level(): int;
 }

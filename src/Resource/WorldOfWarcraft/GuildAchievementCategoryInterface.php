@@ -11,15 +11,15 @@ interface GuildAchievementCategoryInterface extends ResourceInterface
     /**
      * @return int
      */
-    public function id() : int;
+    public function id(): int;
 
     /**
      * @return string
      */
-    public function name() : string;
+    public function name(): string;
 
     /**
      * @return array
      */
-    public function achievements() : array;
+    public function achievements(): array;
 }

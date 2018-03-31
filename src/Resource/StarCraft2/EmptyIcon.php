@@ -9,7 +9,7 @@ abstract class EmptyIcon implements IconInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function x() : int
+    public function x(): int
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyIcon implements IconInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function y() : int
+    public function y(): int
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyIcon implements IconInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function w() : int
+    public function w(): int
     {
         return null;
     }
@@ -33,7 +33,7 @@ abstract class EmptyIcon implements IconInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function h() : int
+    public function h(): int
     {
         return null;
     }
@@ -41,7 +41,7 @@ abstract class EmptyIcon implements IconInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function offset() : int
+    public function offset(): int
     {
         return null;
     }
@@ -49,7 +49,7 @@ abstract class EmptyIcon implements IconInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function url() : string
+    public function url(): string
     {
         return null;
     }

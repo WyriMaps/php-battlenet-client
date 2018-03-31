@@ -6,7 +6,7 @@ use WyriMaps\BattleNet\Resource\StarCraft2\TerranDecal as BaseTerranDecal;
 
 class TerranDecal extends BaseTerranDecal
 {
-    public function refresh() : TerranDecal
+    public function refresh(): TerranDecal
     {
         return $this->wait($this->callAsync('refresh'));
     }

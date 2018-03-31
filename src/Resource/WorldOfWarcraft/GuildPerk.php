@@ -23,7 +23,7 @@ abstract class GuildPerk extends AbstractResource implements GuildPerkInterface
     /**
      * @return int
      */
-    public function guildLevel() : int
+    public function guildLevel(): int
     {
         return $this->guildLevel;
     }
@@ -31,7 +31,7 @@ abstract class GuildPerk extends AbstractResource implements GuildPerkInterface
     /**
      * @return array
      */
-    public function spell() : array
+    public function spell(): array
     {
         return $this->spell;
     }

@@ -33,7 +33,7 @@ abstract class Recipe extends AbstractResource implements RecipeInterface
     /**
      * @return int
      */
-    public function id() : int
+    public function id(): int
     {
         return $this->id;
     }
@@ -41,7 +41,7 @@ abstract class Recipe extends AbstractResource implements RecipeInterface
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return $this->name;
     }
@@ -49,7 +49,7 @@ abstract class Recipe extends AbstractResource implements RecipeInterface
     /**
      * @return string
      */
-    public function profession() : string
+    public function profession(): string
     {
         return $this->profession;
     }
@@ -57,7 +57,7 @@ abstract class Recipe extends AbstractResource implements RecipeInterface
     /**
      * @return string
      */
-    public function icon() : string
+    public function icon(): string
     {
         return $this->icon;
     }

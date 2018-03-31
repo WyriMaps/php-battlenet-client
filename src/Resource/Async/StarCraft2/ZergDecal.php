@@ -6,7 +6,7 @@ use WyriMaps\BattleNet\Resource\StarCraft2\ZergDecal as BaseZergDecal;
 
 class ZergDecal extends BaseZergDecal
 {
-    public function refresh() : ZergDecal
+    public function refresh(): ZergDecal
     {
         return $this->wait($this->callAsync('refresh'));
     }

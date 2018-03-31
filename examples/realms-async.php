@@ -1,7 +1,5 @@
-<?php
-
+<?php declare(strict_types=1);
 use React\EventLoop\Factory;
-use Rx\Observer\CallbackObserver;
 use WyriMaps\BattleNet\AsyncClient;
 use WyriMaps\BattleNet\Resource\WorldOfWarcraft\RealmInterface;
 use function ApiClients\Foundation\resource_pretty_print;

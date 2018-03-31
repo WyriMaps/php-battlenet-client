@@ -33,7 +33,7 @@ abstract class CharacterClass extends AbstractResource implements CharacterClass
     /**
      * @return int
      */
-    public function id() : int
+    public function id(): int
     {
         return $this->id;
     }
@@ -41,7 +41,7 @@ abstract class CharacterClass extends AbstractResource implements CharacterClass
     /**
      * @return int
      */
-    public function mask() : int
+    public function mask(): int
     {
         return $this->mask;
     }
@@ -49,7 +49,7 @@ abstract class CharacterClass extends AbstractResource implements CharacterClass
     /**
      * @return string
      */
-    public function powerType() : string
+    public function powerType(): string
     {
         return $this->powerType;
     }
@@ -57,7 +57,7 @@ abstract class CharacterClass extends AbstractResource implements CharacterClass
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return $this->name;
     }

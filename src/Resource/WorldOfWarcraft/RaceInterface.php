@@ -11,20 +11,20 @@ interface RaceInterface extends ResourceInterface
     /**
      * @return int
      */
-    public function id() : int;
+    public function id(): int;
 
     /**
      * @return int
      */
-    public function mask() : int;
+    public function mask(): int;
 
     /**
      * @return string
      */
-    public function side() : string;
+    public function side(): string;
 
     /**
      * @return string
      */
-    public function name() : string;
+    public function name(): string;
 }

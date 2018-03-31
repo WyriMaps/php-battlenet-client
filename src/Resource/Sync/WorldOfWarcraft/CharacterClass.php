@@ -6,7 +6,7 @@ use WyriMaps\BattleNet\Resource\WorldOfWarcraft\CharacterClass as BaseCharacterC
 
 class CharacterClass extends BaseCharacterClass
 {
-    public function refresh() : CharacterClass
+    public function refresh(): CharacterClass
     {
         return $this->wait($this->callAsync('refresh'));
     }

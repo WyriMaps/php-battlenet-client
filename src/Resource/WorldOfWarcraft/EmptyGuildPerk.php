@@ -9,7 +9,7 @@ abstract class EmptyGuildPerk implements GuildPerkInterface, EmptyResourceInterf
     /**
      * @return int
      */
-    public function guildLevel() : int
+    public function guildLevel(): int
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyGuildPerk implements GuildPerkInterface, EmptyResourceInterf
     /**
      * @return array
      */
-    public function spell() : array
+    public function spell(): array
     {
         return null;
     }

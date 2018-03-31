@@ -9,7 +9,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function id() : int
+    public function id(): int
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function description() : string
+    public function description(): string
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return null;
     }
@@ -33,7 +33,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function icon() : string
+    public function icon(): string
     {
         return null;
     }
@@ -41,7 +41,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function stackable() : int
+    public function stackable(): int
     {
         return null;
     }
@@ -49,7 +49,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function itemBind() : int
+    public function itemBind(): int
     {
         return null;
     }
@@ -57,7 +57,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return array
      */
-    public function bonusStats() : array
+    public function bonusStats(): array
     {
         return null;
     }
@@ -65,7 +65,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return array
      */
-    public function itemSpells() : array
+    public function itemSpells(): array
     {
         return null;
     }
@@ -73,7 +73,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function buyPrice() : int
+    public function buyPrice(): int
     {
         return null;
     }
@@ -81,7 +81,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function itemClass() : int
+    public function itemClass(): int
     {
         return null;
     }
@@ -89,7 +89,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function itemSubClass() : int
+    public function itemSubClass(): int
     {
         return null;
     }
@@ -97,7 +97,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function containerSlots() : int
+    public function containerSlots(): int
     {
         return null;
     }
@@ -105,7 +105,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function inventoryType() : int
+    public function inventoryType(): int
     {
         return null;
     }
@@ -113,7 +113,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return bool
      */
-    public function equippable() : bool
+    public function equippable(): bool
     {
         return null;
     }
@@ -121,7 +121,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function itemLevel() : int
+    public function itemLevel(): int
     {
         return null;
     }
@@ -129,7 +129,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function maxCount() : int
+    public function maxCount(): int
     {
         return null;
     }
@@ -137,7 +137,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function maxDurability() : int
+    public function maxDurability(): int
     {
         return null;
     }
@@ -145,7 +145,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function minFactionId() : int
+    public function minFactionId(): int
     {
         return null;
     }
@@ -153,7 +153,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function minReputation() : int
+    public function minReputation(): int
     {
         return null;
     }
@@ -161,7 +161,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function quality() : int
+    public function quality(): int
     {
         return null;
     }
@@ -169,7 +169,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function sellPrice() : int
+    public function sellPrice(): int
     {
         return null;
     }
@@ -177,7 +177,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function requiredSkill() : int
+    public function requiredSkill(): int
     {
         return null;
     }
@@ -185,7 +185,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return array
      */
-    public function requiredAbility() : array
+    public function requiredAbility(): array
     {
         return null;
     }
@@ -193,7 +193,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function requiredLevel() : int
+    public function requiredLevel(): int
     {
         return null;
     }
@@ -201,7 +201,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function requiredSkillRank() : int
+    public function requiredSkillRank(): int
     {
         return null;
     }
@@ -209,7 +209,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return array
      */
-    public function itemSource() : array
+    public function itemSource(): array
     {
         return null;
     }
@@ -217,7 +217,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function baseArmor() : int
+    public function baseArmor(): int
     {
         return null;
     }
@@ -225,7 +225,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return bool
      */
-    public function hasSockets() : bool
+    public function hasSockets(): bool
     {
         return null;
     }
@@ -233,7 +233,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return bool
      */
-    public function isAuctionable() : bool
+    public function isAuctionable(): bool
     {
         return null;
     }
@@ -241,7 +241,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function armor() : int
+    public function armor(): int
     {
         return null;
     }
@@ -249,7 +249,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function displayInfoId() : int
+    public function displayInfoId(): int
     {
         return null;
     }
@@ -257,7 +257,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function nameDescription() : string
+    public function nameDescription(): string
     {
         return null;
     }
@@ -265,7 +265,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function nameDescriptionColor() : string
+    public function nameDescriptionColor(): string
     {
         return null;
     }
@@ -273,7 +273,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return bool
      */
-    public function upgradable() : bool
+    public function upgradable(): bool
     {
         return null;
     }
@@ -281,7 +281,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return bool
      */
-    public function heroicTooltip() : bool
+    public function heroicTooltip(): bool
     {
         return null;
     }
@@ -289,7 +289,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function context() : string
+    public function context(): string
     {
         return null;
     }
@@ -297,7 +297,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return array
      */
-    public function bonusLists() : array
+    public function bonusLists(): array
     {
         return null;
     }
@@ -305,7 +305,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return array
      */
-    public function availableContexts() : array
+    public function availableContexts(): array
     {
         return null;
     }
@@ -313,7 +313,7 @@ abstract class EmptyItem implements ItemInterface, EmptyResourceInterface
     /**
      * @return array
      */
-    public function bonusSummary() : array
+    public function bonusSummary(): array
     {
         return null;
     }

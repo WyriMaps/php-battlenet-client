@@ -9,7 +9,7 @@ abstract class EmptyItemSubclass implements ItemSubclassInterface, EmptyResource
     /**
      * @return int
      */
-    public function subclass() : int
+    public function subclass(): int
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyItemSubclass implements ItemSubclassInterface, EmptyResource
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return null;
     }

@@ -4,11 +4,9 @@ namespace WyriMaps\BattleNet\CommandBus\Handler\WorldOfWarcraft;
 
 use ApiClients\Tools\Services\Client\FetchAndIterateService;
 use React\Promise\PromiseInterface;
-use Rx\Observable;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\MountsCommand;
-use function React\Promise\resolve;
-use function WyriHaximus\React\futureFunctionPromise;
 use WyriMaps\BattleNet\Resource\WorldOfWarcraft\MountInterface;
+use function React\Promise\resolve;
 
 final class MountsHandler
 {
@@ -26,9 +24,9 @@ final class MountsHandler
     }
 
     /**
-     * Fetch the given repository and hydrate it
+     * Fetch the given repository and hydrate it.
      *
-     * @param MountsCommand $command
+     * @param  MountsCommand    $command
      * @return PromiseInterface
      */
     public function handle(MountsCommand $command): PromiseInterface

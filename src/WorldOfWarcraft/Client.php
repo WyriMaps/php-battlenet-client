@@ -2,9 +2,9 @@
 
 namespace WyriMaps\BattleNet\WorldOfWarcraft;
 
-use function Clue\React\Block\await;
 use React\EventLoop\LoopInterface;
 use Rx\React\Promise;
+use function Clue\React\Block\await;
 
 class Client
 {
@@ -21,7 +21,7 @@ class Client
     /**
      * Client constructor.
      * @param LoopInterface $loop
-     * @param AsyncClient $asyncClient
+     * @param AsyncClient   $asyncClient
      */
     public function __construct(LoopInterface $loop, AsyncClient $asyncClient)
     {
@@ -30,7 +30,7 @@ class Client
     }
 
     /**
-     * List all battle groups
+     * List all battle groups.
      *
      * @return array
      */
@@ -45,7 +45,7 @@ class Client
     }
 
     /**
-     * List all mounts
+     * List all mounts.
      *
      * @return array
      */
@@ -60,7 +60,7 @@ class Client
     }
 
     /**
-     * List all realms
+     * List all realms.
      *
      * @return array
      */
@@ -75,7 +75,7 @@ class Client
     }
 
     /**
-     * List all pets
+     * List all pets.
      *
      * @return array
      */
@@ -90,7 +90,7 @@ class Client
     }
 
     /**
-     * List all pet types
+     * List all pet types.
      *
      * @return array
      */
@@ -105,7 +105,7 @@ class Client
     }
 
     /**
-     * List all zones
+     * List all zones.
      *
      * @return array
      */

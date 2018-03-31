@@ -23,7 +23,7 @@ abstract class Location extends AbstractResource implements LocationInterface
     /**
      * @return int
      */
-    public function id() : int
+    public function id(): int
     {
         return $this->id;
     }
@@ -31,7 +31,7 @@ abstract class Location extends AbstractResource implements LocationInterface
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return $this->name;
     }

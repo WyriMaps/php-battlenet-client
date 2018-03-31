@@ -24,9 +24,9 @@ final class PetTypesHandler
     }
 
     /**
-     * Fetch the given repository and hydrate it
+     * Fetch the given repository and hydrate it.
      *
-     * @param PetTypesCommand $command
+     * @param  PetTypesCommand  $command
      * @return PromiseInterface
      */
     public function handle(PetTypesCommand $command): PromiseInterface

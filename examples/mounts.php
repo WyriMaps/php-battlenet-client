@@ -1,7 +1,6 @@
-<?php
-
-use function ApiClients\Foundation\resource_pretty_print;
+<?php declare(strict_types=1);
 use WyriMaps\BattleNet\Client;
+use function ApiClients\Foundation\resource_pretty_print;
 
 require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'vendor/autoload.php';
 

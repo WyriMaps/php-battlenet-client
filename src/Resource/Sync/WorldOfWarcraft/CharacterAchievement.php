@@ -6,7 +6,7 @@ use WyriMaps\BattleNet\Resource\WorldOfWarcraft\CharacterAchievement as BaseChar
 
 class CharacterAchievement extends BaseCharacterAchievement
 {
-    public function refresh() : CharacterAchievement
+    public function refresh(): CharacterAchievement
     {
         return $this->wait($this->callAsync('refresh'));
     }

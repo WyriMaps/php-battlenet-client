@@ -11,20 +11,20 @@ interface TerranDecalInterface extends ResourceInterface
     /**
      * @return int
      */
-    public function id() : int;
+    public function id(): int;
 
     /**
      * @return string
      */
-    public function title() : string;
+    public function title(): string;
 
     /**
      * @return Icon
      */
-    public function icon() : Icon;
+    public function icon(): Icon;
 
     /**
      * @return int
      */
-    public function achievementId() : int;
+    public function achievementId(): int;
 }

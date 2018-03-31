@@ -9,7 +9,7 @@ abstract class EmptySpell implements SpellInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function id() : int
+    public function id(): int
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptySpell implements SpellInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptySpell implements SpellInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function icon() : string
+    public function icon(): string
     {
         return null;
     }
@@ -33,7 +33,7 @@ abstract class EmptySpell implements SpellInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function description() : string
+    public function description(): string
     {
         return null;
     }
@@ -41,7 +41,7 @@ abstract class EmptySpell implements SpellInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function range() : string
+    public function range(): string
     {
         return null;
     }
@@ -49,7 +49,7 @@ abstract class EmptySpell implements SpellInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function powerCost() : string
+    public function powerCost(): string
     {
         return null;
     }
@@ -57,7 +57,7 @@ abstract class EmptySpell implements SpellInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function castTime() : string
+    public function castTime(): string
     {
         return null;
     }
@@ -65,7 +65,7 @@ abstract class EmptySpell implements SpellInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function cooldown() : string
+    public function cooldown(): string
     {
         return null;
     }

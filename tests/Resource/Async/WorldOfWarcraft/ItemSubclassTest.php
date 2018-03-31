@@ -8,16 +8,18 @@ use WyriMaps\BattleNet\Resource\WorldOfWarcraft\ItemSubclass;
 
 class ItemSubclassTest extends AbstractResourceTest
 {
-    public function getSyncAsync() : string
+    public function getSyncAsync(): string
     {
         return 'Async';
     }
-    public function getClass() : string
+
+    public function getClass(): string
     {
         return ItemSubclass::class;
     }
-    public function getNamespace() : string
+
+    public function getNamespace(): string
     {
-        return Apisettings::NAMESPACE;
+        return ApiSettings::NAMESPACE;
     }
 }

@@ -6,7 +6,7 @@ use WyriMaps\BattleNet\Resource\WorldOfWarcraft\ItemSubclass as BaseItemSubclass
 
 class ItemSubclass extends BaseItemSubclass
 {
-    public function refresh() : ItemSubclass
+    public function refresh(): ItemSubclass
     {
         return $this->wait($this->callAsync('refresh'));
     }

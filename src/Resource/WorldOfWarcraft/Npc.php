@@ -28,7 +28,7 @@ abstract class Npc extends AbstractResource implements NpcInterface
     /**
      * @return int
      */
-    public function id() : int
+    public function id(): int
     {
         return $this->id;
     }
@@ -36,7 +36,7 @@ abstract class Npc extends AbstractResource implements NpcInterface
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return $this->name;
     }
@@ -44,7 +44,7 @@ abstract class Npc extends AbstractResource implements NpcInterface
     /**
      * @return string
      */
-    public function urlSlug() : string
+    public function urlSlug(): string
     {
         return $this->urlSlug;
     }

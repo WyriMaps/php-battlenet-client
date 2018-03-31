@@ -11,10 +11,10 @@ interface GuildPerkInterface extends ResourceInterface
     /**
      * @return int
      */
-    public function guildLevel() : int;
+    public function guildLevel(): int;
 
     /**
      * @return array
      */
-    public function spell() : array;
+    public function spell(): array;
 }

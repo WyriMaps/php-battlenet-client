@@ -6,7 +6,7 @@ use WyriMaps\BattleNet\Resource\StarCraft2\Portrait as BasePortrait;
 
 class Portrait extends BasePortrait
 {
-    public function refresh() : Portrait
+    public function refresh(): Portrait
     {
         return $this->wait($this->callAsync('refresh'));
     }

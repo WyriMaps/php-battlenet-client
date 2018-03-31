@@ -6,7 +6,7 @@ use WyriMaps\BattleNet\Resource\WorldOfWarcraft\Recipe as BaseRecipe;
 
 class Recipe extends BaseRecipe
 {
-    public function refresh() : Recipe
+    public function refresh(): Recipe
     {
         return $this->wait($this->callAsync('refresh'));
     }

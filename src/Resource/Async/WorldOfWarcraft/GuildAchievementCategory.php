@@ -6,7 +6,7 @@ use WyriMaps\BattleNet\Resource\WorldOfWarcraft\GuildAchievementCategory as Base
 
 class GuildAchievementCategory extends BaseGuildAchievementCategory
 {
-    public function refresh() : GuildAchievementCategory
+    public function refresh(): GuildAchievementCategory
     {
         return $this->wait($this->callAsync('refresh'));
     }

@@ -43,7 +43,7 @@ abstract class Icon extends AbstractResource implements IconInterface
     /**
      * @return int
      */
-    public function x() : int
+    public function x(): int
     {
         return $this->x;
     }
@@ -51,7 +51,7 @@ abstract class Icon extends AbstractResource implements IconInterface
     /**
      * @return int
      */
-    public function y() : int
+    public function y(): int
     {
         return $this->y;
     }
@@ -59,7 +59,7 @@ abstract class Icon extends AbstractResource implements IconInterface
     /**
      * @return int
      */
-    public function w() : int
+    public function w(): int
     {
         return $this->w;
     }
@@ -67,7 +67,7 @@ abstract class Icon extends AbstractResource implements IconInterface
     /**
      * @return int
      */
-    public function h() : int
+    public function h(): int
     {
         return $this->h;
     }
@@ -75,7 +75,7 @@ abstract class Icon extends AbstractResource implements IconInterface
     /**
      * @return int
      */
-    public function offset() : int
+    public function offset(): int
     {
         return $this->offset;
     }
@@ -83,7 +83,7 @@ abstract class Icon extends AbstractResource implements IconInterface
     /**
      * @return string
      */
-    public function url() : string
+    public function url(): string
     {
         return $this->url;
     }

@@ -11,10 +11,10 @@ interface BattleGroupInterface extends ResourceInterface
     /**
      * @return string
      */
-    public function name() : string;
+    public function name(): string;
 
     /**
      * @return string
      */
-    public function slug() : string;
+    public function slug(): string;
 }

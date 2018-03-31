@@ -58,7 +58,7 @@ abstract class GuildAchievement extends AbstractResource implements GuildAchieve
     /**
      * @return int
      */
-    public function id() : int
+    public function id(): int
     {
         return $this->id;
     }
@@ -66,7 +66,7 @@ abstract class GuildAchievement extends AbstractResource implements GuildAchieve
     /**
      * @return string
      */
-    public function title() : string
+    public function title(): string
     {
         return $this->title;
     }
@@ -74,7 +74,7 @@ abstract class GuildAchievement extends AbstractResource implements GuildAchieve
     /**
      * @return int
      */
-    public function points() : int
+    public function points(): int
     {
         return $this->points;
     }
@@ -82,7 +82,7 @@ abstract class GuildAchievement extends AbstractResource implements GuildAchieve
     /**
      * @return string
      */
-    public function description() : string
+    public function description(): string
     {
         return $this->description;
     }
@@ -90,7 +90,7 @@ abstract class GuildAchievement extends AbstractResource implements GuildAchieve
     /**
      * @return array
      */
-    public function rewardItems() : array
+    public function rewardItems(): array
     {
         return $this->rewardItems;
     }
@@ -98,7 +98,7 @@ abstract class GuildAchievement extends AbstractResource implements GuildAchieve
     /**
      * @return string
      */
-    public function icon() : string
+    public function icon(): string
     {
         return $this->icon;
     }
@@ -106,7 +106,7 @@ abstract class GuildAchievement extends AbstractResource implements GuildAchieve
     /**
      * @return array
      */
-    public function criteria() : array
+    public function criteria(): array
     {
         return $this->criteria;
     }
@@ -114,7 +114,7 @@ abstract class GuildAchievement extends AbstractResource implements GuildAchieve
     /**
      * @return bool
      */
-    public function accountWide() : bool
+    public function accountWide(): bool
     {
         return $this->accountWide;
     }
@@ -122,7 +122,7 @@ abstract class GuildAchievement extends AbstractResource implements GuildAchieve
     /**
      * @return int
      */
-    public function factionId() : int
+    public function factionId(): int
     {
         return $this->factionId;
     }

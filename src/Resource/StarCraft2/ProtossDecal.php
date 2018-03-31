@@ -37,7 +37,7 @@ abstract class ProtossDecal extends AbstractResource implements ProtossDecalInte
     /**
      * @return int
      */
-    public function id() : int
+    public function id(): int
     {
         return $this->id;
     }
@@ -45,7 +45,7 @@ abstract class ProtossDecal extends AbstractResource implements ProtossDecalInte
     /**
      * @return string
      */
-    public function title() : string
+    public function title(): string
     {
         return $this->title;
     }
@@ -53,7 +53,7 @@ abstract class ProtossDecal extends AbstractResource implements ProtossDecalInte
     /**
      * @return Icon
      */
-    public function icon() : Icon
+    public function icon(): Icon
     {
         return $this->icon;
     }
@@ -61,7 +61,7 @@ abstract class ProtossDecal extends AbstractResource implements ProtossDecalInte
     /**
      * @return int
      */
-    public function achievementId() : int
+    public function achievementId(): int
     {
         return $this->achievementId;
     }

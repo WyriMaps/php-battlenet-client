@@ -9,7 +9,7 @@ abstract class EmptyCharacterClass implements CharacterClassInterface, EmptyReso
     /**
      * @return int
      */
-    public function id() : int
+    public function id(): int
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyCharacterClass implements CharacterClassInterface, EmptyReso
     /**
      * @return int
      */
-    public function mask() : int
+    public function mask(): int
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyCharacterClass implements CharacterClassInterface, EmptyReso
     /**
      * @return string
      */
-    public function powerType() : string
+    public function powerType(): string
     {
         return null;
     }
@@ -33,7 +33,7 @@ abstract class EmptyCharacterClass implements CharacterClassInterface, EmptyReso
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return null;
     }

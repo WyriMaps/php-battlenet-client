@@ -6,7 +6,7 @@ use WyriMaps\BattleNet\Resource\WorldOfWarcraft\Pet as BasePet;
 
 class Pet extends BasePet
 {
-    public function refresh() : Pet
+    public function refresh(): Pet
     {
         return $this->wait($this->callAsync('refresh'));
     }

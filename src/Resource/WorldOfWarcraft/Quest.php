@@ -43,7 +43,7 @@ abstract class Quest extends AbstractResource implements QuestInterface
     /**
      * @return int
      */
-    public function id() : int
+    public function id(): int
     {
         return $this->id;
     }
@@ -51,7 +51,7 @@ abstract class Quest extends AbstractResource implements QuestInterface
     /**
      * @return string
      */
-    public function title() : string
+    public function title(): string
     {
         return $this->title;
     }
@@ -59,7 +59,7 @@ abstract class Quest extends AbstractResource implements QuestInterface
     /**
      * @return int
      */
-    public function reqLevel() : int
+    public function reqLevel(): int
     {
         return $this->reqLevel;
     }
@@ -67,7 +67,7 @@ abstract class Quest extends AbstractResource implements QuestInterface
     /**
      * @return int
      */
-    public function suggestedPartyMembers() : int
+    public function suggestedPartyMembers(): int
     {
         return $this->suggestedPartyMembers;
     }
@@ -75,7 +75,7 @@ abstract class Quest extends AbstractResource implements QuestInterface
     /**
      * @return string
      */
-    public function category() : string
+    public function category(): string
     {
         return $this->category;
     }
@@ -83,7 +83,7 @@ abstract class Quest extends AbstractResource implements QuestInterface
     /**
      * @return int
      */
-    public function level() : int
+    public function level(): int
     {
         return $this->level;
     }

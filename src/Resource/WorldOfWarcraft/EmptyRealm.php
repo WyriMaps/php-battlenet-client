@@ -9,7 +9,7 @@ abstract class EmptyRealm implements RealmInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function type() : string
+    public function type(): string
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyRealm implements RealmInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function population() : string
+    public function population(): string
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyRealm implements RealmInterface, EmptyResourceInterface
     /**
      * @return bool
      */
-    public function queue() : bool
+    public function queue(): bool
     {
         return null;
     }
@@ -33,7 +33,7 @@ abstract class EmptyRealm implements RealmInterface, EmptyResourceInterface
     /**
      * @return bool
      */
-    public function status() : bool
+    public function status(): bool
     {
         return null;
     }
@@ -41,7 +41,7 @@ abstract class EmptyRealm implements RealmInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return null;
     }
@@ -49,7 +49,7 @@ abstract class EmptyRealm implements RealmInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function battlegroup() : string
+    public function battlegroup(): string
     {
         return null;
     }
@@ -57,7 +57,7 @@ abstract class EmptyRealm implements RealmInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function locale() : string
+    public function locale(): string
     {
         return null;
     }
@@ -65,7 +65,7 @@ abstract class EmptyRealm implements RealmInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function timezone() : string
+    public function timezone(): string
     {
         return null;
     }
@@ -73,7 +73,7 @@ abstract class EmptyRealm implements RealmInterface, EmptyResourceInterface
     /**
      * @return array
      */
-    public function connectedRealms() : array
+    public function connectedRealms(): array
     {
         return null;
     }

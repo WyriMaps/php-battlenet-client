@@ -63,7 +63,7 @@ abstract class Mount extends AbstractResource implements MountInterface
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return $this->name;
     }
@@ -71,7 +71,7 @@ abstract class Mount extends AbstractResource implements MountInterface
     /**
      * @return int
      */
-    public function spellId() : int
+    public function spellId(): int
     {
         return $this->spellId;
     }
@@ -79,7 +79,7 @@ abstract class Mount extends AbstractResource implements MountInterface
     /**
      * @return int
      */
-    public function creatureId() : int
+    public function creatureId(): int
     {
         return $this->creatureId;
     }
@@ -87,7 +87,7 @@ abstract class Mount extends AbstractResource implements MountInterface
     /**
      * @return int
      */
-    public function itemId() : int
+    public function itemId(): int
     {
         return $this->itemId;
     }
@@ -95,7 +95,7 @@ abstract class Mount extends AbstractResource implements MountInterface
     /**
      * @return int
      */
-    public function qualityId() : int
+    public function qualityId(): int
     {
         return $this->qualityId;
     }
@@ -103,7 +103,7 @@ abstract class Mount extends AbstractResource implements MountInterface
     /**
      * @return string
      */
-    public function icon() : string
+    public function icon(): string
     {
         return $this->icon;
     }
@@ -111,7 +111,7 @@ abstract class Mount extends AbstractResource implements MountInterface
     /**
      * @return bool
      */
-    public function isGround() : bool
+    public function isGround(): bool
     {
         return $this->isGround;
     }
@@ -119,7 +119,7 @@ abstract class Mount extends AbstractResource implements MountInterface
     /**
      * @return bool
      */
-    public function isFlying() : bool
+    public function isFlying(): bool
     {
         return $this->isFlying;
     }
@@ -127,7 +127,7 @@ abstract class Mount extends AbstractResource implements MountInterface
     /**
      * @return bool
      */
-    public function isAquatic() : bool
+    public function isAquatic(): bool
     {
         return $this->isAquatic;
     }
@@ -135,7 +135,7 @@ abstract class Mount extends AbstractResource implements MountInterface
     /**
      * @return bool
      */
-    public function isJumping() : bool
+    public function isJumping(): bool
     {
         return $this->isJumping;
     }

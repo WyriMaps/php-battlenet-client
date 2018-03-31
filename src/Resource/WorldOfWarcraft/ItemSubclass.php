@@ -23,7 +23,7 @@ abstract class ItemSubclass extends AbstractResource implements ItemSubclassInte
     /**
      * @return int
      */
-    public function subclass() : int
+    public function subclass(): int
     {
         return $this->subclass;
     }
@@ -31,7 +31,7 @@ abstract class ItemSubclass extends AbstractResource implements ItemSubclassInte
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return $this->name;
     }

@@ -4,11 +4,9 @@ namespace WyriMaps\BattleNet\CommandBus\Handler\WorldOfWarcraft;
 
 use ApiClients\Tools\Services\Client\FetchAndIterateService;
 use React\Promise\PromiseInterface;
-use Rx\Observable;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\PetsCommand;
-use function React\Promise\resolve;
-use function WyriHaximus\React\futureFunctionPromise;
 use WyriMaps\BattleNet\Resource\WorldOfWarcraft\PetInterface;
+use function React\Promise\resolve;
 
 final class PetsHandler
 {
@@ -26,9 +24,9 @@ final class PetsHandler
     }
 
     /**
-     * Fetch the given repository and hydrate it
+     * Fetch the given repository and hydrate it.
      *
-     * @param PetsCommand $command
+     * @param  PetsCommand      $command
      * @return PromiseInterface
      */
     public function handle(PetsCommand $command): PromiseInterface

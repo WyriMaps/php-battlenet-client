@@ -11,30 +11,30 @@ interface IconInterface extends ResourceInterface
     /**
      * @return int
      */
-    public function x() : int;
+    public function x(): int;
 
     /**
      * @return int
      */
-    public function y() : int;
+    public function y(): int;
 
     /**
      * @return int
      */
-    public function w() : int;
+    public function w(): int;
 
     /**
      * @return int
      */
-    public function h() : int;
+    public function h(): int;
 
     /**
      * @return int
      */
-    public function offset() : int;
+    public function offset(): int;
 
     /**
      * @return string
      */
-    public function url() : string;
+    public function url(): string;
 }

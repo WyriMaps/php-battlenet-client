@@ -9,7 +9,7 @@ abstract class EmptyNpc implements NpcInterface, EmptyResourceInterface
     /**
      * @return int
      */
-    public function id() : int
+    public function id(): int
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyNpc implements NpcInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyNpc implements NpcInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function urlSlug() : string
+    public function urlSlug(): string
     {
         return null;
     }

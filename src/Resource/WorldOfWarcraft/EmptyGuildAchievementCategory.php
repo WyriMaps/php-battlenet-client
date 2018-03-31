@@ -9,7 +9,7 @@ abstract class EmptyGuildAchievementCategory implements GuildAchievementCategory
     /**
      * @return int
      */
-    public function id() : int
+    public function id(): int
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyGuildAchievementCategory implements GuildAchievementCategory
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyGuildAchievementCategory implements GuildAchievementCategory
     /**
      * @return array
      */
-    public function achievements() : array
+    public function achievements(): array
     {
         return null;
     }

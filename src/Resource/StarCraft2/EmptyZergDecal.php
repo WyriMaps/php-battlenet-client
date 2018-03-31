@@ -9,7 +9,7 @@ abstract class EmptyZergDecal implements ZergDecalInterface, EmptyResourceInterf
     /**
      * @return int
      */
-    public function id() : int
+    public function id(): int
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyZergDecal implements ZergDecalInterface, EmptyResourceInterf
     /**
      * @return string
      */
-    public function title() : string
+    public function title(): string
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyZergDecal implements ZergDecalInterface, EmptyResourceInterf
     /**
      * @return Icon
      */
-    public function icon() : Icon
+    public function icon(): Icon
     {
         return null;
     }
@@ -33,7 +33,7 @@ abstract class EmptyZergDecal implements ZergDecalInterface, EmptyResourceInterf
     /**
      * @return int
      */
-    public function achievementId() : int
+    public function achievementId(): int
     {
         return null;
     }

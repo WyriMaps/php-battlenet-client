@@ -11,10 +11,10 @@ interface ItemSubclassInterface extends ResourceInterface
     /**
      * @return int
      */
-    public function subclass() : int;
+    public function subclass(): int;
 
     /**
      * @return string
      */
-    public function name() : string;
+    public function name(): string;
 }
