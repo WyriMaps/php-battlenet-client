@@ -11,6 +11,8 @@ class Client
 {
     protected $loop;
 
+    protected $client;
+
     public function __construct(string $apiKey)
     {
         $this->loop = EventLoopFactory::create();
