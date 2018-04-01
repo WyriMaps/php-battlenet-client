@@ -4,7 +4,9 @@ declare(strict_types=1);
 namespace WyriMaps\BattleNet;
 
 use ApiClients\Foundation\Factory;
+use function Clue\React\Block\await;
 use React\EventLoop\Factory as EventLoopFactory;
+use WyriMaps\BattleNet\Resource\BattleTagInterface;
 use WyriMaps\BattleNet\WorldOfWarcraft\Client as WowClient;
 
 class Client
@@ -25,4 +27,18 @@ class Client
     {
         return new WowClient($this->loop, $this->client->worldOfWarcraft());
     }
+
+
+    /**
+     * @return BattleTagInterface
+     * @throws \Exception
+     */
+    public function whoAmI(): BattleTagInterface
+    {
+        return await(
+            $this->client->whoAmI(),
+            $this->loop
+        );
+    }
+
 }
