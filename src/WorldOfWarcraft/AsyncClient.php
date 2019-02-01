@@ -3,6 +3,7 @@
 namespace WyriMaps\BattleNet\WorldOfWarcraft;
 
 use ApiClients\Foundation\Client as FoundationClient;
+use function ApiClients\Tools\Rx\unwrapObservableFromPromise;
 use Rx\ObservableInterface;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\BattleGroupsCommand;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\MountsCommand;
@@ -10,7 +11,6 @@ use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\PetsCommand;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\PetTypesCommand;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\RealmsCommand;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\ZonesCommand;
-use function ApiClients\Tools\Rx\unwrapObservableFromPromise;
 
 class AsyncClient
 {
