@@ -4,9 +4,9 @@ namespace WyriMaps\BattleNet\CommandBus\Handler\WorldOfWarcraft;
 
 use ApiClients\Tools\Services\Client\FetchAndIterateService;
 use React\Promise\PromiseInterface;
+use function React\Promise\resolve;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\ZonesCommand;
 use WyriMaps\BattleNet\Resource\WorldOfWarcraft\ZoneInterface;
-use function React\Promise\resolve;
 
 final class ZonesHandler
 {

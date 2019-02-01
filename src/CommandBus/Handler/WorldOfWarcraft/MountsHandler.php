@@ -4,9 +4,9 @@ namespace WyriMaps\BattleNet\CommandBus\Handler\WorldOfWarcraft;
 
 use ApiClients\Tools\Services\Client\FetchAndIterateService;
 use React\Promise\PromiseInterface;
+use function React\Promise\resolve;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\MountsCommand;
 use WyriMaps\BattleNet\Resource\WorldOfWarcraft\MountInterface;
-use function React\Promise\resolve;
 
 final class MountsHandler
 {

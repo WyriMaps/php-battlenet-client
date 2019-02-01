@@ -7,8 +7,8 @@ use ApiClients\Foundation\Middleware\MiddlewareInterface;
 use ApiClients\Foundation\Middleware\PostTrait;
 use Psr\Http\Message\RequestInterface;
 use React\Promise\CancellablePromiseInterface;
-use WyriMaps\BattleNet\Options;
 use function React\Promise\resolve;
+use WyriMaps\BattleNet\Options;
 
 class ApiKeyMiddleware implements MiddlewareInterface
 {

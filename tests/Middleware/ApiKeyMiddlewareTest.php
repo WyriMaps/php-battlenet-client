@@ -3,11 +3,11 @@
 namespace WyriMaps\Tests\BattleNet\Middleware;
 
 use ApiClients\Tools\TestUtilities\TestCase;
+use function Clue\React\Block\await;
 use React\EventLoop\Factory;
 use RingCentral\Psr7\Request;
 use WyriMaps\BattleNet\Middleware\ApiKeyMiddleware;
 use WyriMaps\BattleNet\Options;
-use function Clue\React\Block\await;
 
 final class ApiKeyMiddlewareTest extends TestCase
 {

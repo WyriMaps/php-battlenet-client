@@ -28,10 +28,9 @@ class Client
         return new WowClient($this->loop, $this->client->worldOfWarcraft());
     }
 
-
     /**
-     * @return BattleTagInterface
      * @throws \Exception
+     * @return BattleTagInterface
      */
     public function whoAmI(): BattleTagInterface
     {
@@ -40,5 +39,4 @@ class Client
             $this->loop
         );
     }
-
 }

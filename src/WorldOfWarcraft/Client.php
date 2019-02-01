@@ -2,9 +2,9 @@
 
 namespace WyriMaps\BattleNet\WorldOfWarcraft;
 
+use function Clue\React\Block\await;
 use React\EventLoop\LoopInterface;
 use Rx\React\Promise;
-use function Clue\React\Block\await;
 
 class Client
 {
