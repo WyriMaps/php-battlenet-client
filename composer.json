@@ -14,6 +14,8 @@
         "php": "^7.2",
         "api-clients/client-services": "^1.4",
         "api-clients/foundation": "^1.0",
+        "api-clients/middleware-bearer-authorization": "^2.0",
+        "api-clients/middleware-http-exceptions": "^2.0",
         "api-clients/middleware-json": "^3.1",
         "api-clients/middleware-user-agent": "^2.0"
     },
