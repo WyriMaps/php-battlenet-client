@@ -4,7 +4,7 @@ namespace WyriMaps\BattleNet;
 
 final class Region
 {
-    const DEFAULT = self::EU;
+    public const DEFAULT = self::EU;
 
-    const EU = 'eu.api.battle.net';
+    public const EU = 'eu.api.battle.net';
 }
