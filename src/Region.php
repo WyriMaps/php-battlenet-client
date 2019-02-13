@@ -6,5 +6,5 @@ final class Region
 {
     public const DEFAULT = self::EU;
 
-    public const EU = 'eu.api.battle.net';
+    public const EU = 'eu.api.blizzard.com';
 }
