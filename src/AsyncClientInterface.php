@@ -2,14 +2,10 @@
 
 namespace WyriMaps\BattleNet;
 
-use ApiClients\Foundation\Client;
-use ApiClients\Foundation\Factory;
 use ApiClients\Foundation\Resource\ResourceInterface;
-use React\EventLoop\LoopInterface;
 use React\Promise\CancellablePromiseInterface;
 use React\Promise\PromiseInterface;
-use WyriMaps\BattleNet\CommandBus\Command\WhoAmICommand;
-use WyriMaps\BattleNet\WorldOfWarcraft\AsyncClient as WowClient;
+use WyriMaps\BattleNet\WorldOfWarcraft\AsyncClientInterface as WowClientInterface;
 
 interface AsyncClientInterface
 {
@@ -29,7 +25,7 @@ interface AsyncClientInterface
      */
     public function extract(ResourceInterface $resource): CancellablePromiseInterface;
 
-    public function worldOfWarcraft(): WowClient;
+    public function worldOfWarcraft(): WowClientInterface;
 
     public function whoAmI(string $token): PromiseInterface;
 }

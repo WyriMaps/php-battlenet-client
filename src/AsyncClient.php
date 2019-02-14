@@ -12,6 +12,7 @@ use React\Promise\PromiseInterface;
 use Rx\Scheduler;
 use WyriMaps\BattleNet\CommandBus\Command\WhoAmICommand;
 use WyriMaps\BattleNet\WorldOfWarcraft\AsyncClient as WowClient;
+use WyriMaps\BattleNet\WorldOfWarcraft\AsyncClientInterface as WowClientInterface;
 
 final class AsyncClient implements AsyncClientInterface
 {
@@ -75,7 +76,7 @@ final class AsyncClient implements AsyncClientInterface
     /**
      * @return WowClient
      */
-    public function worldOfWarcraft(): WowClient
+    public function worldOfWarcraft(): WowClientInterface
     {
         return new WowClient($this->client);
     }

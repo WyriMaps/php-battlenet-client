@@ -2,11 +2,9 @@
 
 namespace WyriMaps\BattleNet\Authentication;
 
-use WyriMaps\BattleNet\AuthenticationInterface;
 use ApiClients\Foundation\Options as FoundationOptions;
 use ApiClients\Foundation\Transport\Options as TransportOptions;
-use ApiClients\Middleware\TokenAuthorization\Options as TokenAuthorizationHeaderMiddlewareOptions;
-use ApiClients\Middleware\TokenAuthorization\TokenAuthorizationHeaderMiddleware;
+use WyriMaps\BattleNet\AuthenticationInterface;
 use WyriMaps\BattleNet\Middleware\ClientCredentialsMiddleware;
 use WyriMaps\BattleNet\Options;
 

@@ -7,12 +7,12 @@ final class Region
     public const DEFAULT = self::EU;
 
     /**
-     * The default region
+     * The default region.
      */
     public const EU = 'eu.api.blizzard.com';
 
     /**
-     * Other regions
+     * Other regions.
      */
     public const CN = 'gateway.battlenet.com.cn';
     public const KR = 'kr.api.blizzard.com';

@@ -12,7 +12,7 @@ use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\PetTypesCommand;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\RealmsCommand;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\ZonesCommand;
 
-class AsyncClient
+final class AsyncClient implements AsyncClientInterface
 {
     /**
      * @var FoundationClient

@@ -3,12 +3,9 @@ declare(strict_types=1);
 
 namespace WyriMaps\BattleNet;
 
-use ApiClients\Foundation\Factory;
 use ApiClients\Foundation\Resource\ResourceInterface;
-use function Clue\React\Block\await;
-use React\EventLoop\Factory as EventLoopFactory;
 use WyriMaps\BattleNet\Resource\BattleTagInterface;
-use WyriMaps\BattleNet\WorldOfWarcraft\Client as WowClient;
+use WyriMaps\BattleNet\WorldOfWarcraft\ClientInterface as WowClientInterface;
 
 interface ClientInterface
 {
@@ -28,7 +25,7 @@ interface ClientInterface
      */
     public function extract(ResourceInterface $resource): string;
 
-    public function worldOfWarcraft(): WowClient;
+    public function worldOfWarcraft(): WowClientInterface;
 
     /**
      * @throws \Exception

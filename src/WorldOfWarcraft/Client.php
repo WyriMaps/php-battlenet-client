@@ -6,7 +6,7 @@ use function Clue\React\Block\await;
 use React\EventLoop\LoopInterface;
 use Rx\React\Promise;
 
-class Client
+final class Client implements ClientInterface
 {
     /**
      * @var LoopInterface

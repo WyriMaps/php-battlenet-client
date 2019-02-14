@@ -11,6 +11,7 @@ use React\EventLoop\LoopInterface;
 use Rx\Scheduler;
 use WyriMaps\BattleNet\Resource\BattleTagInterface;
 use WyriMaps\BattleNet\WorldOfWarcraft\Client as WowClient;
+use WyriMaps\BattleNet\WorldOfWarcraft\ClientInterface as WowClientInterface;
 
 final class Client
 {
@@ -73,7 +74,7 @@ final class Client
         );
     }
 
-    public function worldOfWarcraft(): WowClient
+    public function worldOfWarcraft(): WowClientInterface
     {
         return new WowClient($this->loop, $this->asyncClient->worldOfWarcraft());
     }
