@@ -4,6 +4,6 @@ namespace WyriMaps\BattleNet;
 
 final class Options
 {
-    const API_KEY = 'api_key';
-    const API_SECRET = 'api_secret';
+    public const API_KEY = 'api_key';
+    public const API_SECRET = 'api_secret';
 }
