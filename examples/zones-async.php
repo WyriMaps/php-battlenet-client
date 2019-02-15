@@ -7,7 +7,7 @@ use WyriMaps\BattleNet\Resource\WorldOfWarcraft\ZoneInterface;
 require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'vendor/autoload.php';
 
 $loop = Factory::create();
-$client = require 'create_client.php';
+$client = require 'create_client-async.php';
 
 $client->worldOfWarcraft()->zones()->subscribe(function (ZoneInterface $zone) {
     resource_pretty_print($zone);
