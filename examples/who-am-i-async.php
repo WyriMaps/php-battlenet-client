@@ -7,7 +7,7 @@ use WyriMaps\BattleNet\Resource\BattleTagInterface;
 require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'vendor/autoload.php';
 
 $loop = Factory::create();
-$client = new AsyncClient(require 'resolve_apikey.php', $loop);
+$client = require 'create_client.php';
 
 $client->whoAmI(require 'resolve_accesstoken.php')->done(function (BattleTagInterface $battleTag) {
     resource_pretty_print($battleTag);

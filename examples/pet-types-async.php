@@ -7,7 +7,7 @@ use WyriMaps\BattleNet\Resource\WorldOfWarcraft\PetTypeInterface;
 require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'vendor/autoload.php';
 
 $loop = Factory::create();
-$client = new AsyncClient(require 'resolve_apikey.php', $loop);
+$client = require 'create_client.php';
 
 $client->worldOfWarcraft()->petTypes()->subscribe(function (PetTypeInterface $petType) {
     resource_pretty_print($petType);
