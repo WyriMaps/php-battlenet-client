@@ -4,8 +4,10 @@ namespace WyriMaps\BattleNet\WorldOfWarcraft;
 
 use ApiClients\Foundation\Client as FoundationClient;
 use function ApiClients\Tools\Rx\unwrapObservableFromPromise;
+use React\Promise\PromiseInterface;
 use Rx\ObservableInterface;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\BattleGroupsCommand;
+use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\ItemCommand;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\MountsCommand;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\PetsCommand;
 use WyriMaps\BattleNet\CommandBus\Command\WorldOfWarcraft\PetTypesCommand;
@@ -98,5 +100,17 @@ final class AsyncClient implements AsyncClientInterface
         return unwrapObservableFromPromise($this->client->handle(
             new ZonesCommand()
         ));
+    }
+
+    /**
+     * Fetch an item.
+     *
+     * @return PromiseInterface
+     */
+    public function item(int $id): PromiseInterface
+    {
+        return $this->client->handle(
+            new ItemCommand($id)
+        );
     }
 }

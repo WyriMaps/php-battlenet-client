@@ -2,6 +2,7 @@
 
 namespace WyriMaps\BattleNet\WorldOfWarcraft;
 
+use React\Promise\PromiseInterface;
 use Rx\ObservableInterface;
 
 interface AsyncClientInterface
@@ -47,4 +48,11 @@ interface AsyncClientInterface
      * @return ObservableInterface
      */
     public function zones(): ObservableInterface;
+
+    /**
+     * Fetch an item.
+     *
+     * @return PromiseInterface
+     */
+    public function item(int $id): PromiseInterface;
 }
