@@ -98,7 +98,7 @@ final class ClientCredentialsMiddleware implements MiddlewareInterface
             ),
             []
         )->then(function (ResponseInterface $response) use ($cache, $options) {
-            $json = json_decode($response->getBody()->getContents(), true);
+            $json = $response->getBody()->getParsedContents();
 
             return $cache->set(
                 $options[self::class][Options::API_TOKEN_CACHE_KEY],
