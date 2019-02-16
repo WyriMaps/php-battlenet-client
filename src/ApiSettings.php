@@ -47,15 +47,6 @@ final class ApiSettings
         $options = options_merge($options, $suppliedOptions);
         $options[FoundationOptions::HYDRATOR_OPTIONS][HydratorOptions::NAMESPACE_SUFFIX] = $suffix;
 
-        if (!empty($apiKey)) {
-            $options[FoundationOptions::TRANSPORT_OPTIONS][TransportOptions::MIDDLEWARE][] = ApiKeyMiddleware::class;
-            $options[FoundationOptions::TRANSPORT_OPTIONS][TransportOptions::DEFAULT_REQUEST_OPTIONS] = [
-                ApiKeyMiddleware::class => [
-                    Options::API_KEY => $apiKey,
-                ],
-            ];
-        }
-
         return $options;
     }
 }
