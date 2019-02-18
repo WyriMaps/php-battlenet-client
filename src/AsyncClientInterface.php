@@ -25,6 +25,8 @@ interface AsyncClientInterface
      */
     public function extract(ResourceInterface $resource): CancellablePromiseInterface;
 
+    public function withRegion(string $region): AsyncClientInterface;
+
     public function worldOfWarcraft(): WowClientInterface;
 
     public function whoAmI(string $token): PromiseInterface;

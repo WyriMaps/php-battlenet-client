@@ -40,10 +40,10 @@ final class Client
      */
     public static function create(
         AuthenticationInterface $auth,
-        array $options = []
+        array $passedOptions = []
     ): self {
         $loop = EventLoopFactory::create();
-        $options = ApiSettings::getOptions($auth, $options, 'Sync');
+        $options = ApiSettings::getOptions($auth, $passedOptions, 'Sync');
         $client = Factory::create($loop, $options);
 
         try {
@@ -53,7 +53,7 @@ final class Client
         } catch (\Throwable $t) {
         }
 
-        $asyncClient = AsyncClient::createFromClient($client);
+        $asyncClient = AsyncClient::createFromClient($client, $auth, $passedOptions);
 
         return new self($loop, $asyncClient);
     }

@@ -21,26 +21,39 @@ final class AsyncClient implements AsyncClientInterface
      */
     private $client;
 
+    /** @var AuthenticationInterface */
+    private $auth;
+
+    /** @var array */
+    private $options;
+
     /**
-     * @param ClientInterface $client
+     * AsyncClient constructor.
+     * @param Client                  $client
+     * @param AuthenticationInterface $auth
+     * @param array                   $options
      */
-    private function __construct(ClientInterface $client)
+    public function __construct(Client $client, AuthenticationInterface $auth, array $options)
     {
         $this->client = $client;
+        $this->auth = $auth;
+        $this->options = $options;
     }
 
     /**
      * @param  LoopInterface           $loop
      * @param  AuthenticationInterface $auth
-     * @param  array                   $options
+     * @param  array                   $passedOptions
+     * @param  string                  $region
      * @return AsyncClient
      */
     public static function create(
         LoopInterface $loop,
         AuthenticationInterface $auth,
-        array $options = []
+        array $passedOptions = [],
+        string $region = Region::DEFAULT
     ): self {
-        $options = ApiSettings::getOptions($auth, $options, 'Async');
+        $options = ApiSettings::getOptions($auth, $region, $passedOptions, 'Async');
         $client = Factory::create($loop, $options);
 
         try {
@@ -50,7 +63,7 @@ final class AsyncClient implements AsyncClientInterface
         } catch (\Throwable $t) {
         }
 
-        return self::createFromClient($client);
+        return self::createFromClient($client, $auth, $passedOptions);
     }
 
     /**
@@ -58,9 +71,9 @@ final class AsyncClient implements AsyncClientInterface
      * @param  ClientInterface $client
      * @return AsyncClient
      */
-    public static function createFromClient(ClientInterface $client): self
+    public static function createFromClient(ClientInterface $client, AuthenticationInterface $auth, array $options): self
     {
-        return new self($client);
+        return new self($client, $auth, $options);
     }
 
     public function hydrate(string $resource): CancellablePromiseInterface
@@ -71,6 +84,14 @@ final class AsyncClient implements AsyncClientInterface
     public function extract(ResourceInterface $resource): CancellablePromiseInterface
     {
         return $this->client->extract($resource);
+    }
+
+    public function withRegion(string $region): self
+    {
+        $passedOptions = ApiSettings::getOptions($this->auth, $region, $this->options, 'Async');
+        $client = Factory::create($this->client->getFromContainer(LoopInterface::class), $passedOptions);
+
+        return self::createFromClient($client, $this->auth, $this->options);
     }
 
     /**

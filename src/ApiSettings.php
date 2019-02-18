@@ -11,7 +11,6 @@ use ApiClients\Middleware\Json\JsonDecodeMiddleware;
 use ApiClients\Middleware\UserAgent\Options as UserAgentMiddlewareOptions;
 use ApiClients\Middleware\UserAgent\UserAgentMiddleware;
 use ApiClients\Middleware\UserAgent\UserAgentStrategies;
-use WyriMaps\BattleNet\Middleware\ApiKeyMiddleware;
 
 final class ApiSettings
 {
@@ -23,7 +22,6 @@ final class ApiSettings
             HydratorOptions::NAMESPACE_DIR => __DIR__ . DIRECTORY_SEPARATOR . 'Resource' . DIRECTORY_SEPARATOR,
         ],
         FoundationOptions::TRANSPORT_OPTIONS => [
-            TransportOptions::HOST => Region::DEFAULT,
             TransportOptions::MIDDLEWARE => [
                 JsonDecodeMiddleware::class,
                 UserAgentMiddleware::class,
@@ -40,11 +38,13 @@ final class ApiSettings
 
     public static function getOptions(
         AuthenticationInterface $auth,
+        string $region,
         array $suppliedOptions,
         string $suffix
     ): array {
         $options = options_merge(self::TRANSPORT_OPTIONS, $auth->getOptions());
         $options = options_merge($options, $suppliedOptions);
+        $options[FoundationOptions::TRANSPORT_OPTIONS][TransportOptions::HOST] = Region::MAPPING[$region]['host'];
         $options[FoundationOptions::HYDRATOR_OPTIONS][HydratorOptions::NAMESPACE_SUFFIX] = $suffix;
 
         return $options;
