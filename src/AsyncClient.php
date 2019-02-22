@@ -86,7 +86,7 @@ final class AsyncClient implements AsyncClientInterface
         return $this->client->extract($resource);
     }
 
-    public function withRegion(string $region): self
+    public function withRegion(string $region): AsyncClientInterface
     {
         $passedOptions = ApiSettings::getOptions($this->auth, $region, $this->options, 'Async');
         $client = Factory::create($this->client->getFromContainer(LoopInterface::class), $passedOptions);
